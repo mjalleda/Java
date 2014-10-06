@@ -54,7 +54,7 @@ final int m =100; // So this is also instance variable.
 
 | Static        |Instance      | Local |
 | ------------- |:-------------:|------:|
-|Declared only at class level. Can't be declared in method level/block.|Declared at class level|Declared only with in a block/method|
-|Value of variable can't be changed|Value of variable can be changed|Variable can't be accessed without block so value cant be changed|
+| Declared only at class level. Can't be declared in method level/block.| Declared at class level.| Declared only with in a block/method|
+| Value of variable can't be changed|Value of variable can be changed| Variable can't be accessed without block so value cant be changed|
 
 
