@@ -1,6 +1,6 @@
 Core JAVA: 
 -----------
-1: [Syllabus Index](#a1)
+1: [Syllabus Index](#a1)  
 2: [Programs Index](#a2)
 
 ************************ **1: Syllabus Index** ********************************  
@@ -12,7 +12,7 @@ Core JAVA:
 5: Variable types & thier scope:   
 6: Arrays:  
 7: Operators & Assignments:  
-8: TypeCasting
+8: TypeCasting  
 9: FlowControl or statements  
 10: Coding Standards  
 11: imports,package  
@@ -69,7 +69,7 @@ Core JAVA:
 - Calendar  
 - Comparator
 
-**Threads**
+**Threads**  
 1: Thread Creation               
 2: Thread Class Methods      
 3: Synchronization     
@@ -104,7 +104,7 @@ It has total 10 packages & 2 folders.
 10: Package: Assign8Class_File
 
 
-1: [Package : Assign1_FundamentalsOne](Javaassignment/src/Assign1_fundamentalsOne)  
+1: [Package : Assign1_FundamentalsOne](src/Assign1_fundamentalsOne)  
 Exer1_DataTypes.java  
 Exer5_VariablesAndMethods_BothStaticAndInstance.java  
 Exer6_ArraysDeclaration.java  
@@ -130,11 +130,11 @@ Exer20_JavaFlowStaticExecution.java
 Exer21_SuperThisClassA.java  
 Exer21_SuperThisClassB.java
 
-[2:Package: Assign1_FundamentalsTwo](Javaassignment/src/Assign1_fundamentalsTwo)  
+[2:Package: Assign1_FundamentalsTwo](src/Assign1_fundamentalsTwo)  
 Exer13_ClassTypePublicC.java  
 Exer13_ClassTypeDefaultC.java
 
-[3: Package: Assign1_fundamentalThree](Javaassignment/src/Assign1_fundamentalsThree)  
+[3: Package: Assign1_fundamentalThree](src/Assign1_fundamentalsThree)  
 Exer17_Inner class.java  
 Exer17_Inner classes.java  
 Exer17_StaticInner class.java  
@@ -148,7 +148,7 @@ Collections_LocaleAPI.java
 Collections_remindertask.java  
 Collections_TimerAPI.java
 
-[4: Package: Assign2_JavaLang]
+[4: Package: Assign2_JavaLang](src/Assign2_javalang)
 JavaLangMathClass.java
 JavaLangObjectClass.java
 JavaLangStringClass.java
@@ -159,7 +159,7 @@ javalang_clonable.java
 javalang_enum_class.java
 javalang_enum_Month.java
 
-5: Package: Assign3_OOPS
+[5: Package: Assign3_OOPS](src/Assign3_OOPS)
 ClassObjectEncapsulationAbstraction.java
 InheritanceLevelsChild.java
 InheritanceLevelsGrandChild.java
@@ -172,7 +172,7 @@ PolymorphismOverload_of_using_VarArguments.java
 PolymorphismOverload_NameAmbiguity.java
 PolymorphismOverload_of_Constructors.java
 
-6: Package: Assign3_oops_override
+[6: Package: Assign3_oops_override](src/Assign3_oops_override)
 PolymorphismOverrideDatatypeSuperclass.java
 PolymorphismOverrideDatatypeSubclass is subclass.java
 PolymorphismOverrideObjecttypesSubclass.java
@@ -182,7 +182,7 @@ PolymorphismOverrideReturntypesSuperclass is parent.java
 PolymorphismOverrideReturntypesSuperclassAnimal.java
 PolymorphismOverrideReturntypesSuperclassMonkey.java
 
-7: Package: Assign4_Exceptions
+[7: Package: Assign4_Exceptions](src/Assign4_exceptions)
 exercise01_exception_arithmeticone.java
 exercise01_try/catch_arithmeticone.java
 exercise02_exception_nullpointer.java
@@ -213,7 +213,7 @@ exercise12_04_throws_methodoverriding_ParentClass.java
 exercise12_05_throws_constructors_childclass.java
 exercise12_05_throws_constructors_parentclass.java
 
-8: Package: Assign5_Collections
+[8: Package: Assign5_Collections](src/Assign5_collections)
 assign1_diffbetween_Arrays_ObjectArrays_ArrayList_Subclass.java
 assign1_diffbetween_Arrays_ObjectArrays_ArrayList.java
 assign1_diffbetween_ListVsSet.java
@@ -241,7 +241,7 @@ assign5Assingment4.java
 assign6_CollectionClass.java
 Assign7_StringTokenizer.java
 
-9: Package: Assign6_Threads
+[9: Package: Assign6_Threads](src/Assign7_Threads)
 Assign1_Threads_Join.java
 Assign1_Threads_SetPriority.java
 Assign1_Threads_Yield.java
@@ -258,17 +258,17 @@ Assign6_DeadLock1_MainThread.java
 Assign7_DeadLock2_ChildClass.java
 Assign7_DeadLock2_MainClass.java
 
-10: Package: Assign8_File
+[10: Package: Assign8_File](src/Assign8_Files)
 Assign1_Files_Allmethods.java
 Assign1_FileReader.java
 Assign1_File.java
 
-Folders:
-1: Folder: File
+**Folders**
+[1:Folder: File_1](src/)
 File1.txt
 File2.doc
 
-2: Folder: NewDirectory
+[2: Folder: File_2](src/)
 File1
 hs_err_pid2572.log
 
