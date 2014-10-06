@@ -59,21 +59,8 @@ final int m =100; // So this is also instance variable.
 |Value of variable can't be changed | Value of variable can be changed|Variable can't be accessed without block so value cant be changed |  
 |Can access everywhere including in static and non static methods | Can access only in non static methods. Static methods can't use instance variable.|Local variable can be used with in a block. Can't be accessed outside of a block |  
 | It can be accessed directly, or by using object to that class, or by using classname.|To access instance variable outside the block. You need help of classname or object of that class. You can't call it directly. |it can't be accessed outside of the block. |  
-|1: No need to initialize while declaring it, by default it get null/0 value. 2: Final static variables must be initialized before class loaded into memory. otherwise compile time error. i.e we can perform initialization for the final static variables at one of the following places. 1. at the time of declaration
-2. 2. inside the static initialization block
-final static int I;
-static
-{
-int i=30;
-} | 1:  No need to initialize while declaring it, by default it get null/0 value.  
-2: But For the final instance variables ,we should perform initialization other wise compile time error. The final instance variable must be initialization before constructor compiles.i.e at the time of declaration or inside instance initialization block or inside constructor.
-Example:
-final int i;
-public static void main(String arg[])
-{
-Sample s=new Sample()
-System.out.println(s.i); // invalid
-}| value needs to initialized before using it otherwise it will get CTE error|
+|1: No need to initialize while declaring it, by default it get null/0 value. 2: Final static variables must be initialized before class loaded into memory. otherwise compile time error. i.e we can perform initialization for the final static variables at one of the following places. 1. at the time of declaration. 2. 2. inside the static initialization block. Example: final static int I; static{ int i=30; } | 1:  No need to initialize while declaring it, by default it get null/0 value. 2: But For the final instance variables ,we should perform initialization other wise compile time error. The final instance variable must be initialization before constructor compiles.i.e at the time of declaration or inside instance initialization block or inside constructor. Example:
+final int i; public static void main(String arg[]) { Sample s=new Sample() System.out.println(s.i); // invalid }| value needs to initialized before using it otherwise it will get CTE error|
 
 
 
