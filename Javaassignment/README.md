@@ -145,18 +145,19 @@ It has total 10 packages & 2 folders.
 [Collections_Calendar1.java](src/Assign1_fundamentalsThreeCollections_Calendar1.java)    
 [Collections_Date1.java](src/Assign1_fundamentalsThreeCollections_Date1.java)   
 [Collections_LocaleAPI.java](src/Assign1_fundamentalsThreeCollections_LocaleAPI.java)  
-[Collections_remindertask.java](src/Assign1_fundamentalsThreeCollections_remindertask.java)  [Collections_TimerAPI.javaCollections_TimerAPI.java](src/Assign1_fundamentalsThree)
+[Collections_remindertask.java](src/Assign1_fundamentalsThreeCollections_remindertask.java)    [Collections_TimerAPI.javaCollections_TimerAPI.java](src/Assign1_fundamentalsThree)
 
-[4: Package: Assign2_JavaLang](src/Assign2_javalang)
-[JavaLangMathClass.java
-[JavaLangObjectClass.java
-[JavaLangStringClass.java
-[Javalang_StringtoPrimitveToWrapper.java
-[Javalang_WrapperClass.java
-[JavaLangSystemClass.java
-[javalang_clonable.java
-[javalang_enum_class.java
-[javalang_enum_Month.java
+[4: Package: Assign2_JavaLang](src/Assign2_javalang)  
+[JavaLangMathClass.java](src/Assign2_java/langLangMathClass.java)  
+[JavaLangObjectClass.java](src/Assign2_javalang/JavaLangObjectClass.java)  
+[JavaLangStringClass.java Java](src/Assign2_java/LangStringClass.java)  
+[Javalang_StringtoPrimitveToWrapper.java](src/Assign2_java/Javalang_StringtoPrimitveToWrapper.java)  
+[Javalang_WrapperClass.java Java](src/Assign2_java/lang_WrapperClass.java)  
+[JavaLangSystemClass.java Java](src/Assign2_java/LangSystemClass.java)  
+[javalang_clonable.java](src/Assign2_java/javalang_clonable.java)  
+[javalang_enum_class.java](src/Assign2_java/javalang_enum_class.java)  
+[javalang_enum_Month.java](src/Assign2_java/javalang_enum_Month.java)
+
 
 [5: Package: Assign3_OOPS](src/Assign3_OOPS)
 [ClassObjectEncapsulationAbstraction.java
