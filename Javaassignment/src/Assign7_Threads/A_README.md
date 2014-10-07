@@ -116,7 +116,7 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 |1: All thread share same memory. |1.:Each process have thier own memory, they dont share memory most of the time|
 |2: They use low CPU usage |2.They use high CPU usage |
 
-**13: Deamon threads: **  
+**13: Deamon threads:**  
 - Deamon threads run in the background. When you create deamon thread, after implementing it, you have to start it. 
 - Most used deamon threads are used for garbage collectors and for security.  
 
@@ -131,7 +131,7 @@ We can have multiple threads into one group.
 **16: Thread wait, notify & notifyall.**   
 Threads communicates to each other with wait, notify & notifyall.   
 1: Wait: One thread notifies other threads that it is waiting for lock.  
-2: notify: One thread notifies/tells one other thread that lock is released. 
+2: notify: One thread notifies/tells one other thread that lock is released.  
 3: notifyall:  One thread notifies/tells all other threads that lock is released.  
 Example with threadA and threadB.: If threadA holds lock and thread waiting for the same lock. Then   
 - ThreadB tells threadA that it is waiting for the lock  
