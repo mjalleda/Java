@@ -4,7 +4,7 @@ Core JAVA:
 2: [Programs Index](#a2)
 
 ************************ **1: Syllabus Index** ********************************  
-**Fundamentals:**  
+[**Fundamentals:**](#https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign1_fundamentalsOne/A_README.md)
 1: DataTypes  
 2: Identifiers:  
 3: Literlas:   
@@ -39,20 +39,43 @@ Core JAVA:
 9:System class 
 
 **OOPS**  
-1: class,object  
+1: Class API & Object APIs.  
 2: Encapsulation  
-3: Abstraction              
+3: Abstraction  
 4: Inheritance  
-5: Method Overloading       
-6: Method Overriding      
-7: Constructors         
+5: Polymorphism  
+6: Constructor
+     
 
 **Exceptions**  
-1: DefaultException               
-2: Checked,UnChecked        
-3: try,catch,finally        
-4: throw , throws  
-5: Handler
+**1: Exceptions:**  
+1. What is exception:  
+2. Exception Hierarchy:  
+3. Calling an object with their superclass names  
+4. Types of exceptions: Errors & Exceptions.  
+5. Checked & Unchecked exceptions.  
+6. How to generate unchecked exceptions:   
+7. Checked exceptions are:  
+8. Custom exceptions:   
+9. Purpose/Example of custom exceptions  
+
+**2: Throw & Throws.**  
+1. Throws:   
+2. Purpose of Throws:  
+3. Throw:   
+4. Throws with Method Overrding :   
+5. Throws with Constructor Overrding :   
+6. Difference between Catch and Throws  
+7. Difference between Throws & Throw  
+
+**3: Try, Catch & Finally**  
+1. Try and catch block:   
+2. Catch block  
+3. Finally block  
+4. Valid & Invalid combination scenarios  
+5. What is the purpose of having multiple catches :   
+6. Rule
+
 
 **Collections**  
 1: Collection Interface  
@@ -70,13 +93,22 @@ Core JAVA:
 - Comparator
 
 **Threads**  
-1: Thread Creation               
-2: Thread Class Methods      
-3: Synchronization     
-4: wait,notify,notifyAll
-5: Daemon Threads              
-6: Thread group                     
-7: Thread Deadlock
+1: Thread Life Cycle OR Thread.start() method or threadobject.strat() method.   
+2: Threads  
+3: Diff b/w processor and thread:  
+4: How to create threads:   
+5: Some Threads  methods:   
+6: Join VS Synchronized:   
+7: Synchronization:  
+8: Volitile vs Synchronization:   
+9: Purpose of Volatile  
+10 :Genericcs  
+11: Difference between Synchronized and Volatile   
+12: Difference between Threads & Processors  
+13: Deamon threads:   
+14: Deamon Deadlock  
+15: Thread Group  
+16: Thread wait, notify & notifyall
 
 **java.io/File**  
 1: File                     
@@ -91,185 +123,14 @@ Core JAVA:
 
 
 ************************* 2: Programs Index ********************************  
-It has total 10 packages & 2 folders.  
-1: Package : Assign1_FundamentalsOne  
-2: Package: Assign1_FundamentalsTwo  
-3: Package: Assign1_fundamentalThree  
-4: Package: Assign2_JavaLang:  
-5: Package: Assign3_OOPS  
-6: Package: Assign3_oops_override  
-7: Package: Assign4_Exceptions  
-8: Package: Assign5_Collections  
-9: Package: Assign7_Threads  
-10: Package: Assign8Class_File
-
-
-[1: Package : Assign1_FundamentalsOne](src/Assign1_fundamentalsOne)  
-[Exer1_DataTypes.java](src/Assign1_fundamentalsOne/Exer1_DataTypes.java)    
-[Exer5_VariablesAndMethods_BothStaticAndInstance.java](src/Assign1_fundamentalsOne/Exer5_VariablesAndMethods_BothStaticAndInstance.java)    
-[Exer6_ArraysDeclaration.java](src/Assign1_fundamentalsOne/Exer6_ArraysDeclaration.java)    
-[Exer8_TypeCastingObjectiveImplicationExplicit.java](src/Assign1_fundamentalsOne)    
-[Exer13_ClassTypePublicA.java](src/Assign1_fundamentalsOne/Exer13_ClassTypePublicA.java)    
-[Exer13_ClassTypePublicB.java](src/Assign1_fundamentalsOne/Exer13_ClassTypePublicB.java)     
-[Exer13_ClassTypeDefaultA.java](src/Assign1_fundamentalsOne/Exer13_ClassTypeDefaultA.java)     
-[Exer13_ClassTypeDefaultB.java](src/Assign1_fundamentalsOne/Exer13_ClassTypeDefaultB.java)     
-[Exer13_ClassTypeFinalA.java](src/Assign1_fundamentalsOne/Exer13_ClassTypeFinalA.java)     
-[Exer13_ClassTypeFinalB.java](src/Assign1_fundamentalsOne/Exer13_ClassTypeFinalB.java)     
-[Exer13_RegularClassWithFinalMethodsA.java](src/Assign1_fundamentalsOne/Exer13_RegularClassWithFinalMethodsA.java)     
-[Exer13_RegularClassCallingFinalMethodsB.java](src/Assign1_fundamentalsOne/Exer13_RegularClassCallingFinalMethodsB.java)     
-[Exer15_AbstractPublicA.java](src/Assign1_fundamentalsOne/Exer15_AbstractPublicA.java)     
-[Exer15_concreteUseAbstractA.java](src/Assign1_fundamentalsOne/Exer15_concreteUseAbstractA.java)     
-[Exer18_InterfaceA.java](src/Assign1_fundamentalsOne/Exer18_InterfaceA.java)      
-[Exer18_InterfaceB.java](src/Assign1_fundamentalsOne/Exer18_InterfaceB.java)      
-[Exer18_SubInterface.java](src/Assign1_fundamentalsOne/Exer18_SubInterface.java)   ,     
-[Exer18_ClassImplementsInterfaceAInterfaceB.java](src/Assign1_fundamentalsOne/Exer18_ClassImplementsInterfaceAInterfaceB.java)       
-[Exer20_JavaFlowBothStaticAndInstanceExecution.java](src/Assign1_fundamentalsOne/Exer20_JavaFlowBothStaticAndInstanceExecution.java)     
-[Exer20_JavaFlowBothStaticAndInstanceExecutionSuperclass.java](src/Assign1_fundamentalsOne/Exer20_JavaFlowBothStaticAndInstanceExecutionSuperclass.java)      [Exer20_JavaFlowBothStaticAndInstanceExecutionSubclass.java](src/Assign1_fundamentalsOne/Exer20_JavaFlowBothStaticAndInstanceExecutionSubclass.java)     
-[Exer20_JavaFlowInstanceExecution.java](src/Assign1_fundamentalsOne/Exer20_JavaFlowInstanceExecution.java)     
-[Exer20_JavaFlowStaticExecution.java](src/Assign1_fundamentalsOne/Exer20_JavaFlowStaticExecution.java)     
-[Exer21_SuperThisClassA.java](src/Assign1_fundamentalsOne/Exer21_SuperThisClassA.java)     
-[Exer21_SuperThisClassB.java](src/Assign1_fundamentalsOne/Exer21_SuperThisClassB.java)   
-
-[2:Package: Assign1_FundamentalsTwo](src/Assign1_fundamentalsTwo)  
-[Exer13_ClassTypePublicC.java](src/Assign1_fundamentalsTwo/Exer13_ClassTypePublicC.java)   
-[Exer13_ClassTypeDefaultC.java](src/Assign1_fundamentalsTwo/Exer13_ClassTypeDefaultC.java)
-
-3: Package: Assign1_fundamentalThree](src/Assign1_fundamentalsThree)  
-[Exer17_Inner class.java](src/Assign1_fundamentalsThree/Exer17_Inner class.java)  
-[Exer17_Inner classes.java](src/Assign1_fundamentalsThree/Exer17_Inner classes.java)  
-[Exer17_StaticInner class.java](src/Assign1_fundamentalsThree/Exer17_Inner classes.java)  
-[Exer17_MethodLocalInner class.java](src/Assign1_fundamentalsThreeExer17_MethodLocalInner class.java)  
-[Exer17_AnonymousInner classA.java](src/Assign1_fundamentalsThreeExer17_AnonymousInner classA.java)  
-[Exer17_AnonymousInner classB.java](src/Assign1_fundamentalsThreeExer17_AnonymousInner classB.java)  
-[Exer17_AnonymousInner classC.java](src/Assign1_fundamentalsThreeExer17_AnonymousInner classC.java)  
-[Collections_Calendar1.java](src/Assign1_fundamentalsThreeCollections_Calendar1.java)    
-[Collections_Date1.java](src/Assign1_fundamentalsThreeCollections_Date1.java)   
-[Collections_LocaleAPI.java](src/Assign1_fundamentalsThreeCollections_LocaleAPI.java)  
-[Collections_remindertask.java](src/Assign1_fundamentalsThreeCollections_remindertask.java)    [Collections_TimerAPI.javaCollections_TimerAPI.java](src/Assign1_fundamentalsThree)
-
-[4: Package: Assign2_JavaLang](src/Assign2_javalang)  
-[JavaLangMathClass.java](src/Assign2_java/langLangMathClass.java)  
-[JavaLangObjectClass.java](src/Assign2_javalang/JavaLangObjectClass.java)  
-[JavaLangStringClass.java Java](src/Assign2_java/LangStringClass.java)  
-[Javalang_StringtoPrimitveToWrapper.java](src/Assign2_java/Javalang_StringtoPrimitveToWrapper.java)  
-[Javalang_WrapperClass.java Java](src/Assign2_java/lang_WrapperClass.java)  
-[JavaLangSystemClass.java Java](src/Assign2_java/LangSystemClass.java)  
-[javalang_clonable.java](src/Assign2_java/javalang_clonable.java)  
-[javalang_enum_class.java](src/Assign2_java/javalang_enum_class.java)  
-[javalang_enum_Month.java](src/Assign2_java/javalang_enum_Month.java)
-
-
-[5: Package: Assign3_OOPS](src/Assign3_OOPS)
-[ClassObjectEncapsulationAbstraction.java
-[InheritanceLevelsChild.java
-[InheritanceLevelsGrandChild.java
-[InheritanceLevelsParent.java
-[InheritanceAndObjectDiffSub1.java
-[InheritanceAndObjectDiffSub2.java
-[InheritanceAndObjectDiffSuper.java
-[PolymorphismOverload_of_ApiClasses.java
-[PolymorphismOverload_of_using_VarArguments.java
-[PolymorphismOverload_NameAmbiguity.java
-[PolymorphismOverload_of_Constructors.java
-
-[6: Package: Assign3_oops_override](src/Assign3_oops_override)
-[PolymorphismOverrideDatatypeSuperclass.java
-[PolymorphismOverrideDatatypeSubclass is subclass.java
-[PolymorphismOverrideObjecttypesSubclass.java
-[PolymorphismOverrideObjecttypesSuperclass.java
-[PolymorphismOverrideReturntypesSubclass is subclass.java
-[PolymorphismOverrideReturntypesSuperclass is parent.java
-[PolymorphismOverrideReturntypesSuperclassAnimal.java
-[PolymorphismOverrideReturntypesSuperclassMonkey.java
-
-[7: Package: Assign4_Exceptions](src/Assign4_exceptions)
-[exercise01_exception_arithmeticone.java
-[exercise01_try/catch_arithmeticone.java
-[exercise02_exception_nullpointer.java
-[exercise02_try/catch_nullpointer.java
-[exercise03_exception_classnotfound.java
-[exercise04_exception_StatckOverflow.java
-[exercise04_throw_customexception.java
-[exercise05_NumberFormatException.java
-[exercise06_IllegalArgumentException.java
-[exercise07_ArrayIndexOutOfBoundException.java
-[exercise08_StringIndexOutOfBoundException.java
-[exercise09_trymultiplecatches_purpose.java
-[exercise09_trymultiplecatcheswithOrder.java
-[exercise09_trywithmultiplecatches_ValidInvalidCombinations.java
-[exercise09_trywithsinglecatches_ValidInvalidCombinations.java
-[exercise10_customeExceptions_Subclass1.java
-[exercise10_customeExceptions_Subclass2.java
-[exercise10_customeExceptions_SuperClass.java
-[exercise11_01_ThrowsException_regular.java
-[exercise11_02_ThrowsException_Handlingwithtry/catch.java
-[exercise11_02_ThrowsWithThrow_Superclasss.java
-[exercise11_03_CustomException.java
-[exercise11_03_Throw_withThrows_withouttry/catchBlock_Superclass.java
-[exercise11_03_Throw_withtry/catchBlcok_withoutThrows_Superclass.java
-[exercise11_03_ThrowsWithThrow_Subclass.java
-[exercise12_04_throws_methodoverriding_ChildClass.java
-[exercise12_04_throws_methodoverriding_ParentClass.java
-[exercise12_05_throws_constructors_childclass.java
-[exercise12_05_throws_constructors_parentclass.java
-
-[8: Package: Assign5_Collections](src/Assign5_collections)
-[assign1_diffbetween_Arrays_ObjectArrays_ArrayList_Subclass.java
-[assign1_diffbetween_Arrays_ObjectArrays_ArrayList.java
-[assign1_diffbetween_ListVsSet.java
-[assign2Lists_AllIterators.java
-[assign2Lists_ArrayList_SomeOfItsMethods.java
-[assign2Lists_LinkedList_SomeOfItsMethods.java
-[assign2Lists_Vector_SomeOfItsMethods.java
-[assign3And4_SubClass_Employee.java
-[assign3AND4_Subclass_Mycomparator.java
-[assign3Sets_1_Hashset.java
-[assign3Sets_2_LinkedHashSet.java
-[assign3Sets_3_TreeSet.java
-[assign4Maps_1_HashMap_AllIterators.java
-[assign4Maps_1_HashMap.java
-[assign4Maps_2_LinkedHashMap_AllIterators.java
-[assign4Maps_2_LinkedHashMap.java
-[assign4Maps_3_Hashtable_AllIterators.java
-[assign4Maps_3_HashTable.java
-[assign4Maps_4_TreeMap.java
-[assign5Assignment1_Student.java
-[assign5Assignment2_Employee.java
-[assign5Assignment2_Main.java
-[assign5Assignments_Main.java
-[assign5Assingment4.java
-[assign6_CollectionClass.java
-[Assign7_StringTokenizer.java
-
-[9: Package: Assign6_Threads](src/Assign7_Threads)
-[Assign1_Threads_Join.java](src/Assign7_Threads)
-[Assign1_Threads_SetPriority.java](src/Assign7_Threads)
-[Assign1_Threads_Yield.java](src/Assign7_Threads)
-[Assign2_Threads_SynchromizedBlock_Employee.java](src/Assign7_Threads)
-[Assign2_Threads_SynchromizedBlock_MainClass.java](src/Assign7_Threads)
-[Assign2_Threads_SynchromizedMethod_Employee.java](src/Assign7_Threads)
-[Assign2_Threads_SynchromizedMethod_MainClass.java](src/Assign7_Threads)
-[Assign3_Generics.java](src/Assign7_Threads)
-[Assign4_WaitNotify_ChildThread.java](src/Assign7_Threads)
-[Assign4_WaitNotify_MainThread.java](src/Assign7_Threads)
-[Assign5_DeamonThread_Subclass.java](src/Assign7_Threads)
-[Assign6_DeadLock1_ChildThread.java](src/Assign7_Threads)
-[Assign6_DeadLock1_MainThread.java](src/Assign7_Threads)
-[Assign7_DeadLock2_ChildClass.java](src/Assign7_Threads)
-[Assign7_DeadLock2_MainClass.java](src/Assign7_Threads)
-
+It has total 10 packages & 2 folders.  Please click on each package and you will find programs.  
+[1: Package : Assign1_FundamentalsOne](src/Assign1_fundamentalsOne)   
+[2:Package: Assign1_FundamentalsTwo](src/Assign1_fundamentalsTwo)   
+[3: Package: Assign1_fundamentalThree](src/Assign1_fundamentalsThree)    
+[4: Package: Assign2_JavaLang](src/Assign2_javalang)    
+[5: Package: Assign3_OOPS](src/Assign3_OOPS)  
+[6: Package: Assign3_oops_override](src/Assign3_oops_override)  
+[7: Package: Assign4_Exceptions](src/Assign4_exceptions)  
+[8: Package: Assign5_Collections](src/Assign5_collections)  
+[9: Package: Assign6_Threads](src/Assign7_Threads)   
 [10: Package: Assign8_File](src/Assign8_Files)
-[Assign1_Files_Allmethods.java(src/Assign8_Files/
-[Assign1_FileReader.java(src/Assign8_Files/
-[Assign1_File.java](src/Assign8_Files/assign1_Files_Allmethods.java)
-
-**Folders**
-[1:Folder: File_1](src/)
-[File1.txt
-[File2.doc
-
-[2: Folder: File_2](src/)
-[File1
-[hs_err_pid2572.log
-
-
