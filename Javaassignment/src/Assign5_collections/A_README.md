@@ -336,11 +336,48 @@ Raw type is ArrayList AL1 = new ArrayList();
 - Ex: India’s population. 1,000,000. Italy population is 1.000.000    
 - To get a country’s numbering format. For ex: display population, area, number of units.    
 - To get a country’s currency format. India’s is Rs.1,000, US is $1,000.    
-- To get a country’s date format. For ex: In india date comes first. DD/MM/YYYY, but US Month comes first MM/DD/YYYY  - To get all above in locale class,  we also use different APIs, date, time, calendar, NumberFormat, SimpleDateFormat, DateFormat classes. 
+- To get a country’s date format. For ex: In india date comes first. DD/MM/YYYY, but US Month comes first MM/DD/YYYY.  
+- To get all above in locale class,  we also use different APIs, date, time, calendar, NumberFormat, SimpleDateFormat, DateFormat classes. 
 
 How to change the text format : How to change text from language to another language. Change Hello to “Hola” in Mexico. Store a text file with “Hola” string. Then call with getInstance() method then ask variables to change to Spanish when input string = “hello” By using locale class. Country code:  locale l = new locale(“Mexico”);
 
+**5: SimpleDateformat:** This is used to for setting/getting date formats.
 
+**6: Timer:** This is just like schedulers in windows, basically you can schedule task(s) at particular time. so it runs automatically at that time.    
+For this you need to create tasks (which you want to run) + schedulers (when you want to run).
+
+**7: Calendar VS date:**       
+Date: has very limited set of methods and it doesn’t have wide range of properties like calendar. So calendar got introduced for this purpose. Using date, you can print current date, month, year, hour, mm and ss. But using calendar date you can print day of a week, week of month,  isLeapYear?    
+
+**8: Comparator:** This is similar to Comparable method. Where it uses compare() method. Remember    
+- Comparable uses compareto() method    
+- Comparator uses compare() method.    
+There is no much difference between comparable & comparator. Except that, comparable used in same class where your Treeset is defined but Comparator defined in different class where your treeset is defined. Otherwise both can be overide and used for sorting values/objects.     
+
+**9: Cursors:** There are three types of cursors.     
+- Iterators ( used by all collection classes)    
+- ListIterator (used by List implemented classes)    
+- Enumerator (used only by legacy classes)    
+
+**9.1: Iterators:** Iterators are defined in collection interface. So these can be used by both Lists and Sets.     Which has limited number of methods.     
+- hasNext    
+- next    
+- remove.     
+
+**9.2: ListIterator:** ListIterator is defined in List class, so it can be used by ArrayList, LinkedList, Vector and Stack. It has total 9 methods. But it also inherits Object API class methods.    
+- add(e)    
+- hasNext()    
+- hasPrevious()    
+- next()    
+- nextIndex()    
+- previous()    
+- previousIndex()    
+- remove()    
+- set(e)    
+
+**9.3: Enumerator:** Which is used only for legacy classes like Hashtable, hashcode and Vector class. It has the following methods.    
+- hasMoreElements()     
+- nextElement()    
 
  
 
