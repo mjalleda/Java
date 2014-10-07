@@ -1,7 +1,7 @@
 Core Java Fundamentals
 ======================
 I only covered core java topics here. Below are Sub-topics of Fundamentals:   
-You will find all fundamentals programs in [Here](Assign1_fundamentalsOne)
+You will find all fundamentals programs in [Here]()
 
 **Fundamentals:**  
 ___________________  
