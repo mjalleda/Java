@@ -234,3 +234,30 @@ This is 1.5 feature. variable argument methods (var-arg methods)allow us to spec
                 }
 		}
 
+******************************************************************************
+**15: Abstract Classes & Abstract Methods**  
+Any programs created: Yes  
+Programs:   
+AbstractPublicA  
+concreteUseAbstractA
+
+**1: Abstract:**  
+-	We can’t create objects for abstract class.   
+-	We can have abstract class and abstract methods. But not possible to have abstract variables.     
+-	Abstract class can have both instance methods and abstract methods.    
+-	A abstract class can have 0 abstract methods and N concrete methods.  
+-	A abstract class can have N abstract methods and 0 concrete methods.  
+-	But a concrete class can’t contain abstract methods.  
+-	You can’t create objects for abstract class but you can access abstract class by extending abstract class.  
+-	Abstract methods can only have signature not implementation. That’s the reason we should not keep curly 		braces at end.  Abstract class/methods are used only for specifications. So child class is responsible 		to provide the implementation for the parent class abstract methods.  
+-	A regular class can’t contain abstract methods. If a class contain at least one abstract method we should 		have to declare that class as abstract other wise compile time error.
+
+**2: What is the difference between abstract & public?** Public is a access modfier with it you can specify if variable/method/class is public type or not? But abstract is not a access modifier so the purpose of abstract class is to create specification/signatures. But there are two rules in abstract  
+	1: Abstract class may be either public or default  
+	2: But methods may be three types: Public, default and protected. Not private because if you create a 			private method with signature you can’t access this method to do implementation in other class. 
+	Some of java books says abstract is a access modifier since you can create methods/classes of abstract type. 	Even though if a class/method is abstract type you need to pass access modifier like public, protected, private 		(if you don’t pass any, that means default).
+
+**3: Why there is an option have creating Abstract checkbox while creating classes when there is no difference between public and abstract classes?**  See, the purpose of abstract class is to provide specification no implementation. For ex: you know the variables take public, protected, methods will be default and protected….then you can write all these by creating a abstract class by selecting 
+Abstract check box + Public radio button.
+
+**4: We can’t create objects for abstract class. Why?** You don’t implementation in abstract methods, if you try to create a object for abstract class and you call abstract methods with help of object, JVM doesn’t know what to do since there is no implementation for abstract methods but call is made, so it will be crashed. That’s why Java not allow to create object for abstract class.
