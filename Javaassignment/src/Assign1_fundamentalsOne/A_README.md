@@ -405,33 +405,33 @@ Exer20_JavaFlowStaticExecution
 These are just blocks not methods, basically they can also have arguments/variables.   
 But these should be defined outside of main class. Not only top level of class, you can define them anywhere but outside of main class. 
 
-        Public sample()
-Int I;
-Int j;
+        Public sample()  
+        Int I;  
+        Int j;  
+        
+        Sample(int I, int j) // this is constructor  
+        {  
+        Print “ This is constructor”  
+        }
 
-Sample(int I, int j) // this is constructor
-{
-Print “ This is constructor”
-}
+         
+        Static m1() // this is static block  
+        {  
+        Print (“ The project starts here”);  
+        }
 
-{
-Static m1() // this is static block
-{
-Print (“ The project starts here”);
-}
+        Int M2() // this is instance blcok  
+        {  
+        Print ”This is the project name”;   
+        K=i+j;  
+        Int k;  
+        }
 
-Int M2() // this is instance blcok
-{
-Print ”This is the project name”; 
-K=i+j;
-Int k;
-}
-
-Public static void main(String args[])
-{
-Sample s = new Sample(10,20);
-s.m2();
-}
+	Public static void main(String args[])  
+	{  
+	Sample s = new Sample(10,20);  
+	s.m2();  
+	}
 
 
 
