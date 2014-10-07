@@ -379,7 +379,7 @@ There is no much difference between comparable & comparator. Except that, compar
 - hasMoreElements()     
 - nextElement()    
 
-**9.4: Difference between Iterator, ListIterator and Enumerator.**
+**9.4: Difference between Iterator, ListIterator and Enumerator.**  
 | Iterator  |ListIterator |Enumerator|
 | ------------- |-------------||
 | 1: Iterator is defined in collection interface, so Iterator can be used in any collection implemented classes
