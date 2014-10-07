@@ -102,7 +102,7 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 **11: Difference between Synchronized and Volatile**   
 
 | Synchronized methods/blocks        |      Volatile variable|
-| ------------- |:-------------:| -----:|
+| ------------- |-------------|
 |1: This only used for methods and blocks. |1.: This only used for variables. |
 |2: This keyword used to allow only one thread to execute at one time. Basically protects statid and instance methods & blocks.  |2: This keyword gives separate copy for each thread. Basically protects variable|
 |3: This is used to avoid data incosistency problems  |3: This is also used to avoid data inconsistency problems |
