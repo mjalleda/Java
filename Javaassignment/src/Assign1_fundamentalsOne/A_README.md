@@ -478,17 +478,17 @@ One more program:
         static int l; 	// static variables  
         int j=7; int k; // Instance variables.  
         public Myclass(int m)  		// constructor  
-        	{  
-        	System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);  
-        	}
+        {  
+        System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);  
+        }  
         {                 			 //Instance initialize block  
         J=70; l=20;   
-               	}  
-               	Static 					 //static Initialize block  
-               	{  
-               	i=50;  
-               	}   
-               	}
+        }  
+        Static 					 //static Initialize block  
+        {  
+        i=50;  
+        }   
+        }
 
 
 *****************************************************************************
