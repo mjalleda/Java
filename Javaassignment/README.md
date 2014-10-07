@@ -3,7 +3,10 @@ Core JAVA:
 1: [Syllabus Index](#a1)  
 2: [Programs Index](#a2)
 
-************************ **1: Syllabus Index** ********************************  
+************************************************************     
+1: Syllabus Index
+-----------------------  
+
 [**Fundamentals:**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign1_fundamentalsOne/A_README.md)  
 1: DataTypes  
 2: Identifiers:  
@@ -121,8 +124,9 @@ Core JAVA:
 1: Folder: File  
 2: Folder: NewDirectory
 
-
-************************* 2: Programs Index ********************************  
+************************************************************    
+2: Programs Index 
+------------------  
 It has total 10 packages & 2 folders.  Please click on each package and you will find programs.  
 [1: Package : Assign1_FundamentalsOne](src/Assign1_fundamentalsOne)   
 [2:Package: Assign1_FundamentalsTwo](src/Assign1_fundamentalsTwo)   
