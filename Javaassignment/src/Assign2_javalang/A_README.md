@@ -113,7 +113,7 @@ N
 ********************************* *************************************
 **3: Strings & 4: string buffer,StringBuilder**    
 
-Sub-Topics:
+Sub-Topics:  
 1: String API:  
 2: Difference between: String constant pool and Heap memory.   
 3: How they uses memory:  
@@ -136,14 +136,14 @@ String s = new String(“laxmi”);
 string buffer sb = new string buffer(“laxmi”);  
 Stringbuilder sbd = new Stringbuilder(“laxmi”);
 
-2: Difference between: String constant pool and Heap memory.   
+**2: Difference between: String constant pool and Heap memory.**   
 Java uses both String constant pool and heap memory. String API objects uses heap memory and regular string variables uses String constant pool memory.   
 1: String s = new String(“laxmi”);  
 2: String s1 = “Laxmi”.   
 1st one stores in heap memory with reference s.   
 2nd stores in string constant pool memory. 
 
-3: How they uses memory: Take a scenario with 4 variables/objects.  
+**3: How they uses memory:** Take a scenario with 4 variables/objects.  
 String S1 = new String(“laxmi”);  
 String S2 = new String(“Laxmi”);
 
@@ -164,3 +164,29 @@ Multiple processor can’t access string buffer objects at same time
 
 The behavior of these three APIs are very different when you apply API methods on it. For ex: Equal method. Please check assignment for it.
 
+***************************************************************************
+**5: Cloneable And Comparable**   
+Comparable: We are going to learn this in Sets & Maps.  
+Cloneable:   
+Cloneable is a interface, a class needs to implement this interface in order to use this.
+This is used to clone a object and its methods and properties. Basically creating another object of an object. There are so many methods that we can execute on cloneable. 
+
+***************************************************************************
+**6: Wrapper APIs**    
+
+Any Assignment created: Yes  
+Program name:   
+Javalang_WrapperClass.java  
+Javalang_StringToPrimitiveToWrapper.java
+
+**1: Why java introduced Wrapper classes:**
+Primitive data types are not object oriented programming., as they used in other nonOOPs  languages like C.
+For serialization. (What is serialization: Refer to audio of Jan19th).  
+There are not programming methods to conversion in primitive types. Where wrapper classes have good conversion methods.
+
+**2: What is serialization:**  If you two difference machines on a network and you want to send java code to another machine.  You need to send this thru files. For that you need to create objects cant send variables directly. So you can’t use primitive datatypes. When you collect all objects into a file and send it to another machine is called serialization and when the 2nd end machine receives the file, it de-serialize the file and gets the data in form objects.
+
+**3: Diagram Explanation:**   
+1: Primitive --> String  & String -->  Primitive  
+2: String --> Wrapper  & Wrapper --> Primitive  
+3: Primitive --> Wrapper  & Wrapper --> Primitive
