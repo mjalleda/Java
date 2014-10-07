@@ -109,8 +109,9 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 
 
 **12: Difference between Threads & Processors**    
-| Threads| Processors|  
-| ------------- |-------------|  
-|1: All threads share same memory| Each process have thier own memory, they dont share memory most of the time|  
-|They use low CPU usage|They use high CPU usage|
 
+
+| Threads        |      Processors|
+| ------------- |-------------|
+|1: All thread share same memory. |1.:Each process have thier own memory, they dont share memory most of the time|
+|2: They use low CPU usage |2.They use high CPU usage |
