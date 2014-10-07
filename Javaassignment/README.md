@@ -7,7 +7,7 @@ Core JAVA:
 1: Syllabus Index
 -----------------------  
 
-[**Fundamentals:**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign1_fundamentalsOne/A_README.md)  
+[**Fundamentals:**](src/Assign1_fundamentalsOne)  
 1: DataTypes  
 2: Identifiers:  
 3: Literlas:   
@@ -30,7 +30,7 @@ Core JAVA:
 20: java execution flow   
 21: super,this
 
-[**Java.lang:**](https://github.com/mjalleda/Java/tree/master/Javaassignment/src/Assign2_javalang)  
+[**Java.lang:**](src/Assign2_javalang)  
 1: Class,Object Classe.  
 2: Enum                                  
 3: String                          
@@ -41,7 +41,7 @@ Core JAVA:
 8: Autoboxing,Autounboxing  
 9:System class 
 
-[**OOPS**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign3_OOPS/A_README.md)    
+[**OOPS**](src/Assign3_OOPS)    
 1: Class API & Object APIs.  
 2: Encapsulation  
 3: Abstraction  
@@ -50,7 +50,7 @@ Core JAVA:
 6: Constructor
      
 
-[**Exceptions**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign4_exceptions/A_README.md)    
+[**Exceptions**](src/Assign4_exceptions)    
 **1: Exceptions:**  
 1. What is exception:  
 2. Exception Hierarchy:  
@@ -80,7 +80,7 @@ Core JAVA:
 6. Rule
 
 
-[**Collections**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign5_collections/A_README.md)  
+[**Collections**](src/Assign5_collections)  
 1: Collection Interface  
 2: All Lists Classes  
 3: All Sets classes  
@@ -95,7 +95,7 @@ Core JAVA:
 - Calendar  
 - Comparator
 
-[**Threads**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign7_Threads/A_README.md)    
+[**Threads**](src/Assign7_Threads)    
 1: Thread Life Cycle OR Thread.start() method or threadobject.strat() method.   
 2: Threads  
 3: Diff b/w processor and thread:  
@@ -113,7 +113,7 @@ Core JAVA:
 15: Thread Group  
 16: Thread wait, notify & notifyall
 
-[**java.io/File**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign8_Files/A_README.md)    
+[**java.io/File**](src/Assign8_Files)    
 1: File                     
 2: All Reader Classes          
 3: All Writer Classes       
