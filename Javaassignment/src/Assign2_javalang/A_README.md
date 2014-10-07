@@ -23,19 +23,15 @@ Here, you will find java.lang API classes & their details.
 **1: Multiple inheritance:**  Object is a super class of any java class .All the predefined classes are user defined classes. They either directly or indirectly extends java.lang.objectclass.  
 For every class parent class in object class. Take below example. A is child and B is parent class. Where A is extending B class. But B extends Object class directly/indirectly. That means, java supports multilevel inheritance.  
 Object Class > Class B > Class A.  
-       Class A extends B  
-       {  
-       // code  
+
+       Class A extends B {  
+       // code   
        }
-       
        Class B extends Object {  
        // code   
        }
 
 **2: Hashcode:** In generally, all objects/variables/all stores in memory. System provides an id to each object in memory for identification. This id is called hashcode. All objects/classes/variables contains hashcode. 
-|1234444|34333|4444888|9843549|
-|-------------|-------------|-------------|
-|Obj1|Obj2|Obj3|Obj4|
 
 | 1234444        |      34333      |  4444888 | 9843549 |
 | ------------- |-------------| -----|------------|
