@@ -406,32 +406,55 @@ These are just blocks not methods, basically they can also have arguments/variab
 But these should be defined outside of main class. Not only top level of class, you can define them anywhere but outside of main class. 
 
         Public sample()  
-        Int I;  
+	Int I;  
         Int j;  
         
         Sample(int I, int j) // this is constructor  
         {  
-        Print “ This is constructor”  
+        	Print “ This is constructor”  
         }
 
          
         Static m1() // this is static block  
         {  
-        Print (“ The project starts here”);  
+        	Print (“ The project starts here”);  
         }
 
         Int M2() // this is instance blcok  
         {  
-        Print ”This is the project name”;   
-        K=i+j;  
-        Int k;  
+        	Print ”This is the project name”;   
+        	K=i+j;  
+        	Int k;  
         }
 
-	Public static void main(String args[])  
+        Public static void main(String args[])  
 	{  
 	Sample s = new Sample(10,20);  
 	s.m2();  
 	}
 
+Basically, in above program, control first goes to static block and it will print value from there, later it create object, when it create object it immediately execute the instance block and also create constructor and execute the constructor too.  
+Constructor is nothing but: It will contain same name as classname. But it will declared outside main, this is used to create objects. It logic will be executed when object is created.  For more information about this please refer to audio file. 
+
+        public class Initialization  // a class  
+        {  
+        	Private static String msg(String msg) // static Method  
+        	{  
+        	System.out.println(msg); return msg;  
+        	}  
+        	static String m=msg(“1”); // static variables  
+        	static   
+        	{		// static block  
+        		m=msg(“3”);  
+        	}
+		
+		{  				// Instance block  
+			m=msg(“2”);  
+		}  
+		public static void main(String a[])  // Main method  
+		{  
+			Object o=new Object();  
+		}  
+	}
 
 
