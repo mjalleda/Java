@@ -454,7 +454,7 @@ Constructor is nothing but: It will contain same name as classname. But it will 
 			{  
 			Object o=new Object();
 			}
-			}
+		}
 
 **3: Java execution flow order should be:** Priority order start from 
 Static variables > then it goes to static block > then it goes to  Instance variables > then it goes to  Instance block >  then it goes to  Constructor >  then it goes to  others like main method.  
