@@ -34,7 +34,8 @@ Here is a hierarchy of Collection Interfaces:
 - Sets  
 - Sorted Set  
 - Map  
-- Sorted Hash Map  
+- Sorted Hash Map    
+
 **Classes:** are:   
 - ArrayList  
 - LinkedList  
@@ -91,7 +92,8 @@ Classes are:  ArrayList, LinkedList, Vector & Stack.
 - ArrayList  
 - VectorList  
 - LinkedList  
-- Stack  
+- Stack    
+
 But for ex: if all above classes implemented some methods, let say if 6 methods in same manner (no change at all, and output also same) then why to write in four classes, write it in one location and access it from there. So that common location is AbstractList class.  
 5: Remember Collection,List & Sets are Interfaces. AbstractClass is a abstract class & all others are regular classes.    
 6. Most commonly used are Lists are     
