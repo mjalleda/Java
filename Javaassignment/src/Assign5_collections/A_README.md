@@ -172,7 +172,8 @@ Classes are: HashSet & LinkedHashSet & TreeSet.
 
 3: Purpose is of Sets is same as Lists : the only difference is, it doesn’t allow duplicates. 
 
-**2: Difference between Hashset & ListHashSet**  
+**2: Difference between Hashset & ListHashSet**    
+
 |  HashSet |LinkedHashSet |
 | ------------- |-------------|
 | Both are from Sets  | |
