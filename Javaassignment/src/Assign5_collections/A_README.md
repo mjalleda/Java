@@ -123,3 +123,25 @@ Stack.
 |List returns the order of values in the order they are initialized.|In set order is preserved( except LinkedHashSet). |
 |Widely used are Lists.|If you don’t want duplicates then use sets. |
 |List uses both For and Foreach. Because it is index based.|Since set is not index based it doesn’t allow forloop. Only allows foreach loop.|
+
+**3: What is the purpose of Lists & Sets:** Usually, in most of the projects there would be some requirements like transferring set of values. You can insert all those values into one array and pass that array in between layers. So all these are different types of arrays. Some allow duplicates some doesn’t. In some order is preserved in some order is not preserved. So main purpose is: To transfer a set of values in between layers, we use Lists & Sets. 
+
+**4: Memory management:** In arrayList & vector, if you change/update/modify any value, JVM will create a new Object inside memory location and update there and removes the existing one. Hence, memory management is not good in Array list & Vector. But in LinkedList case, it doesn’t happen. JVM doesn’t create a new object, it just updates the existing one. So memory management is good in LinkedList.  
+Summary: ArrayList & vector are good. LinkedList is bad.
+
+**5: Performance:** Since vector is very old, it doesn’t allow multiple threads to access its methods. For ex: addmethod can be used by one user/thread at one time. But this is opposite in ArrayList & LinkedList, since they are not legacy classes, they allow multiple threads at one time to access one method.  
+Summary: ArrayList & LinkedList are good. Vector is bad.
+
+**6: Random access Interface:** Since this mechanism is implemented on ArrayList & Vector, so user can rapidly access/search values, since this is not implemented on LinkedList, user can’t do rapid search for values in LinkedList.   
+Summary: ArrayList & LinkedList are good. 
+
+**7: Difference between all three. ArrayList, LinkedList and Vector.**  
+
+|  ArrayList |Vector |LinkedList|
+| ------------- |-------------| -----|
+|Memory Management Is not good: Update/modify: If you update a value in the ArrayList, JVM will create a new memory for the ArrayList and point it to that one, later it will remove the old memory location. Memory allocation is not good for Array list   | Memory Management Is not good:Update/modify: If you update a value in the Vector, JVM will create a new memory for the Vector and point it to that one, later it will remove the old memory location. Memory allocation is not good for Vector|Memory Management is good:Update/modify: If you update A value in the LinkedList, JVM will not create a new memory for the linkedList, it updates existing one. So memory management is good on LinkedList.|
+|Performance on accessing values is good:  wise Array list is good since it allows multiple threads to access same method at same time. For ex: If 10 users want to access addmethod in ArrayList, it allow all 10 users at same time.   | Performance on accessing values is Bad:Performance wise Vector is BAD since it doesn't allow multiple threads to access same method at same time. For ex: If 10 users want to access addmethod in Vector, it allow 1 user at one time.|Performance wise LinkedList is good: Performance wise Linked list is good since it allows multiple threads to access same method at same time. For ex: If 10 users want to access addmethod in LinkedList, it allow all 10 users at same time.|
+| Search criteria: ArrayList is good for searching values. For searching ArrayList is good. Since 'random access' interface is implemented on it, so this mechanism allow user to search values rapidly on Arraylist  | Search criteria: Vector is good for searching a value. For searching Vector  is good. Since 'random access' interface is implemented on this also, so this mechanism allow user to search values rapidly on Vector.|Search criteria: LinkedList is bad to search for an item. For searching LinkedList  is veryBAD. Since 'random access' interface is NOT implemented on this, so JVM takes lot of time to search a value on LinkedList.|
+| You can use for & for each loop. Since all lists are index based.  |You can use for & for each loop. Since all lists are index based. |You can use for & for each loop. Since all lists are index based.|
+| All three are used to transfer set of values (in a object) from one layer to another layer. Or from one place to another place. For ex: transferring from DEO to Service layer.  | ||
+|ArrayList is not legacy class | |
