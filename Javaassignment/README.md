@@ -4,7 +4,7 @@ Core JAVA:
 2: [Programs Index](#a2)
 
 ************************ **1: Syllabus Index** ********************************  
-[**Fundamentals:**](#https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign1_fundamentalsOne/A_README.md)
+[**Fundamentals:**](https://github.com/mjalleda/Java/blob/master/Javaassignment/src/Assign1_fundamentalsOne/A_README.md)
 1: DataTypes  
 2: Identifiers:  
 3: Literlas:   
