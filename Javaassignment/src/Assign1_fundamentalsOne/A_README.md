@@ -223,7 +223,7 @@ To avoid this problem, java introduced Strictfp. Basically we define Strcitfp fo
 Any programs created: NO  
 This is 1.5 feature. variable argument methods (var-arg methods)allow us to specify that a method can take multiple arguments of the same type and allows the number of arguments to be variable.  
 
-             Void m1(int..i)  
+        Void m1(int..i)  
 		{  
 			….  
 		}
