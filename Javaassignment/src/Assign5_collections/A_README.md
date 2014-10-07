@@ -331,6 +331,14 @@ Raw type is ArrayList AL1 = new ArrayList();
 - any characters or multiple characters   
 - separate strings by removing characters   
 
+**4: LocaleClass :** This is used for localization. To get any    
+- country code/ID, its language and ISOCountries and their languages.     
+- Ex: India’s population. 1,000,000. Italy population is 1.000.000    
+- To get a country’s numbering format. For ex: display population, area, number of units.    
+- To get a country’s currency format. India’s is Rs.1,000, US is $1,000.    
+- To get a country’s date format. For ex: In india date comes first. DD/MM/YYYY, but US Month comes first MM/DD/YYYY  - To get all above in locale class,  we also use different APIs, date, time, calendar, NumberFormat, SimpleDateFormat, DateFormat classes. 
+
+How to change the text format : How to change text from language to another language. Change Hello to “Hola” in Mexico. Store a text file with “Hola” string. Then call with getInstance() method then ask variables to change to Spanish when input string = “hello” By using locale class. Country code:  locale l = new locale(“Mexico”);
 
 
 
