@@ -69,32 +69,29 @@ Program Name: Exer6_ArraysDeclaration
 
 *****************************************************************************
 **7: Operators & Assignments:**  
-Any programs created: No
-• equality(==,!=)
-• relational
-• bit-wise
-• short-circuit
-• instanceof
-• cast
-• conditional(?)
-• new
-• [ ]
-Compound
+Any programs created: No  
+• equality(==,!=)  
+• relational  
+• bit-wise  
+• short-circuit  
+• instanceof  
+• cast  
+• conditional(?)  
+• new  
+• [ ]  
+• Compound
 
 
 ****************************************************************************
 **8. TYPE CASTING**  
-Any programs created: yes  
-Program Name: Exer8_TypeCastingObjectiveImplicationExplicit.java
-
-TypeCasting: There are two types of typecasting.
+**TypeCasting:** There are two types of typecasting.
   1: Primitive and  
   2: Objective.  
 Both have again two types of categories. Implicit and explicit.   
 Implicit means, JVM will take care while execution.  
 Explicit means, you have to tell JVM when you code it.
 
-1: Primitive type casting:  
+**1: Primitive type casting:**  
 byte --> short --> int --> long --> float --> double   
 char --> int --> long --> float --> double  
 That means, byte can directly convert into int. In above two diagram, jvm converts forward typecasting. That means, byte --> short, byte --> int, int --> float but not long --> int or int --> byte.
@@ -115,7 +112,7 @@ How to define name of classes, objects, variables,packages…
 Any programs created: No
 
 ******************************************************************************
-**  11: Import package:**     
+**11: Import package:**     
 Any programs created: No  
 Basically here we talk about java source structure, the order is  
 - Package statement  
@@ -138,12 +135,12 @@ Any programs created: No
 Public static void main(String args[])  
 {  
 }  
-Public: We use public to give access to outsider of main. Since Java programs  
+**Public:** We use public to give access to outsider of main. Since Java programs  
 executed from main line, so JVM has to access main method, that means outsiders needs to access this. So main always should be public.  
-Static: Using static we allocate some memory for main method. So it should be
+**Static:** Using static we allocate some memory for main method. So it should be
 always static. In any program language the code should be saved into memory with some references. In java, objects does this task, basically they allocate memory for methods/variables.  Since main method has no object so Static allocates memory for main method.    
-Void: We don’t return anything from main, so its always void.  
-String args[] : It means, main method is expecting array of strings. That means, for ex: if you are creating a website, then you want to user to enter dynamic values every time, then you can give array of strings.   
+**Void:** We don’t return anything from main, so its always void.  
+**String args[]** : It means, main method is expecting array of strings. That means, for ex: if you are creating a website, then you want to user to enter dynamic values every time, then you can give array of strings.   
 Create below class and then right click > run as > run configuration > arguments > enter 10 30 > then apply> then it will print 10 & 20 as output. 
 
 Class super  
