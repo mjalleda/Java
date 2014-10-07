@@ -156,10 +156,67 @@ Output:
 10  
 20
 
-What if you don’t pass dynamic values: JVM will pass empty array or null.
+What if you don’t pass dynamic values: JVM will pass empty array or null.  
   System.out.println(args[0]);  
 Output:  
 Java.lang.string@1...9
 
 
+******************************************************************************
+**13: Access Modifiers/Access Specifiers**    
+Below are called Access Modifiers:  
+Public, Private, Protected, Default, static, final, abstract, strictfp, native  
+Notes:   
+- The allowed modifiers for the Top level classes are : 1.public 2.default 3. final 4.abstract 5. Strictfp, 6: Abstract    
+- The allowed modifiers for the method level are 1.public 2.default 3. Private 4.protected 5. Final, 6: static 7: Abstract  
+- The allowed modifiers for the variables  
+- Final, public, protected, default, private and static.
+For ex: Package 1 have class1 and class2. Package 2 contains : Class3 & Class4.
+
+**1: Public:** Accessed everywhere (refer to diagram in the notes).   If public defined in class1, it can be accessed in class2, packag1, and all classed in packag2. 
+
+**2: Private:** If it is defined in class1, it can be accessed only to class1, not to class2, or packag2. 
+It is accessible within the block/class/method. Private not allowed for top level class.  That means, only for variable/methods. 
+
+**3: Default:** By default, variables/methods/classes are available to within the package, not outside the package. If a class declared as the default ,we are allowed to access that class only with in the current package.outside package can’t access this. If a method declared as the default ,that member is visible with in the current package only.
+
+**4: Protected:** This is accessible within the package + subclasses. It is not defined at class level. That means, only members/methods can define as protected.  
+
+**5: Final:** Final means, you are making methods/classes as constants, that means you can’t override/extend them.  
+**5.1: Rule1/Final class:** You can’t use extend keyword in subclass/other classes to call Final class. For ex: if Final class contains final methods, subclass don’t extend Final class, so that means there is no relationship between final class and subclass, so subclass can contain same signatures/methods of final methods in subclass. Here, we realized that final class can’t be extended in other classes.
+
+**5.2: Rule 2/Final methods:** For ex, if concrete class ‘A’ contains final methods, if subclass ‘b’ extends class ‘A’, then it can’t override ‘final methods of A in B’. It will get an error. That means, you can’t override final methods. Here we realized that, a concrete class can contain final methods.   
+
+**5.3: Rule 2/Final variables:** For ex, if concrete class ‘A’ contains final variables, if subclass ‘b’ extends class ‘A’, then it can’t re-initialize/override ‘final variables of A in B’. (Usually, you re-produce this error by 
+Creating a parent reference in sub class, then try access final variables using the object, then it will show you the error.
+
+So you don’t extend final class , then subclass may contain same signatures o
+
+**5.4: Final Methods :** if you add final in front of methods, that method becomes constant and in other subclasses, these can be accessible but can’t be overide.
+
+**5.5: Final classes:** If you add final in front of class, that class becomes constant and in other sub classes, these can be accessible by objects, but can’t create the child class.
+We can implement security by final.
+
+**6: Abstract**  
+**6.1: Abstract with static method is not valid. Why?** 
+Because, static means constant and you can’t change, but abstract means you can’t do implementation with in the method, so if you do implementation in different class first you need to access the method, since it is static you can’t change it. SO ABSTRACT STATIC METHOS IS NOT POSSIBLE.
+
+**6.2: Abstract with final method is not valid. Why?**   
+If a class declared as the abstract ,we should create the child class to provide implementation for abstract methods.  
+If a class declared as the final ,you are not allowed to create the child class.Hence final and abstract combination is illegal for classes.
+
+**7: Static:** The keyword static can be use for classes,methods, variables  
+We can not apply static keyword for the top level classes,but we can apply inner classes.  
+For every object a separate copy of instance variables will be created but in the case of static variables a single copy will be created at the class level and shared by all the objects of that class.
+
+**8: Native:** Native means, you can use c/c++ code with in java class by making some configuration changes. But how to write c/c++ code in java.  For ex: There is a requirement that we need add Client API/Classes/code into our code, so our application can analyze client's data. But client code is in c/C++ and ours is in Java. How is it possible?
+Basically, java allow a method called ‘addLibrary’. If you keep the client code in local machine, then you can add that api into our java program by ‘addLibrary’ method.  
+If you know a method exists in C/C++ api, then you can define that method with native. 
+
+**9: Strictfp:** Basically you are strictly maintaining a structure for floating point variables.   
+Why it is introduced? : Before java 1.4, floating point variables to take 32 bits if OS is 32 bit OS, otherwise it takes 64bits if OS is 64bit OS. Code may not run if you run the 32 bit code on 64 bit and vise versa.
+To avoid this problem, java introduced Strictfp. Basically we define Strcitfp for classes not for methods or variables. Inside that class, all floating point variables take same number of decimal points that you have. Basically it goes by IEEE standards.
+
+******************************************************************************
+			
 
