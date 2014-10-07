@@ -144,4 +144,4 @@ Summary: ArrayList & LinkedList are good.
 | Search criteria: ArrayList is good for searching values. For searching ArrayList is good. Since 'random access' interface is implemented on it, so this mechanism allow user to search values rapidly on Arraylist  | Search criteria: Vector is good for searching a value. For searching Vector  is good. Since 'random access' interface is implemented on this also, so this mechanism allow user to search values rapidly on Vector.|Search criteria: LinkedList is bad to search for an item. For searching LinkedList  is veryBAD. Since 'random access' interface is NOT implemented on this, so JVM takes lot of time to search a value on LinkedList.|
 | You can use for & for each loop. Since all lists are index based.  |You can use for & for each loop. Since all lists are index based. |You can use for & for each loop. Since all lists are index based.|
 | All three are used to transfer set of values (in a object) from one layer to another layer. Or from one place to another place. For ex: transferring from DEO to Service layer.  | ||
-|ArrayList is not legacy class | |
+|ArrayList is not legacy class | ||
