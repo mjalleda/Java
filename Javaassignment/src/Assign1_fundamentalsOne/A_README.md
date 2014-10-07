@@ -405,8 +405,8 @@ Exer20_JavaFlowStaticExecution
 These are just blocks not methods, basically they can also have arguments/variables.   
 But these should be defined outside of main class. Not only top level of class, you can define them anywhere but outside of main class. 
 
-        Public sample()  
-	Int I;  
+        Public sample()    
+        Int I;  
         Int j;  
         
         Sample(int I, int j) // this is constructor  
@@ -428,10 +428,10 @@ But these should be defined outside of main class. Not only top level of class, 
         }
 
         Public static void main(String args[])  
-	{  
-	Sample s = new Sample(10,20);  
-	s.m2();  
-	}
+        {  
+        	Sample s = new Sample(10,20);    
+        	s.m2();    
+        }
 
 Basically, in above program, control first goes to static block and it will print value from there, later it create object, when it create object it immediately execute the instance block and also create constructor and execute the constructor too.  
 Constructor is nothing but: It will contain same name as classname. But it will declared outside main, this is used to create objects. It logic will be executed when object is created.  For more information about this please refer to audio file. 
@@ -446,11 +446,11 @@ Constructor is nothing but: It will contain same name as classname. But it will 
         	static   
         	{		// static block  
         		m=msg(“3”);  
-        	}
-		
-		{  				// Instance block  
+        	}  
+        	{  				// Instance block  
 			m=msg(“2”);  
 		}  
+		
 		public static void main(String a[])  // Main method  
 		{  
 			Object o=new Object();  
