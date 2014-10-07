@@ -4,26 +4,26 @@ I only covered topics on core java. Below are Sub-topics of Fundamentals:
 
 **Fundamentals:**  
 ___________________  
-1: DataTypes
-2: Identifiers:
-3: Literlas:
-4: Java Keywords:
-5: Variable types & thier scope:
-6: Arrays:
-7: Operators & Assignments:
-8: TypeCasting
-9: FlowControl or statements
-10: Coding Standards
-11: imports,package
-12: mainMethod,args
-13: Access Modifiers
-14: var-argMethod
-15: Abstract Class
-16: GarbageCollection
-17: Inner class
-18: Interface
-19: Assertions
-20: java execution flow
+1: DataTypes  
+2: Identifiers:  
+3: Literlas:  
+4: Java Keywords:  
+5: Variable types & thier scope:  
+6: Arrays:  
+7: Operators & Assignments:  
+8: TypeCasting  
+9: FlowControl or statements  
+10: Coding Standards  
+11: imports,package  
+12: mainMethod,args  
+13: Access Modifiers  
+14: var-argMethod  
+15: Abstract Class  
+16: GarbageCollection  
+17: Inner class  
+18: Interface  
+19: Assertions  
+20: java execution flow  
 21: super,this
 
 ******************************************************************************  
