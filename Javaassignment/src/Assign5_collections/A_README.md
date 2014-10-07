@@ -1,5 +1,5 @@
 Collections:
--------------  
+==============   
 **Sub-Topics:**  
 1: Collection Interface  
 2: All Lists Classes  
@@ -18,6 +18,7 @@ Collections:
 
 *****************************************************************************
 **1: Collection Interfaces.**
+-------------------------  
 
 **1: Layers in most of programming applications:**
 
@@ -54,6 +55,7 @@ Maps represent mappings rather than true collections. However, these interfaces 
 
 *****************************************************************************				  
 **2: All Lists Classes**
+-------------------------
 
 **Sub-Topics:**  
 1: Lists & Diagram :    
@@ -147,7 +149,8 @@ Summary: ArrayList & LinkedList are good.
 | ArrayList is not legacy class  | Vector is a legacy class|LinkedList is not legacy class|
 
 ******************************************************************************  
-**3: All Sets Classes**
+**3: All Sets Classes**  
+-------------------------
 
 **Sub-Topics:**  
 1: Sets & Hirarchy.  
@@ -223,7 +226,8 @@ Tree Set: is the mostly used.
 
 
 ******************************************************************************
-**4: All Maps Classes**
+**4: All Maps Classes**  
+-------------------------
 
 **Sub-Topics:**  
 1: Maps & diagram:  
@@ -300,7 +304,8 @@ Entry set and values look similar but they aren’t. Because, entry set works on
 Common: All three uses same iterator method inside to iterate each key-value.
 
 ******************************************************************************  
-**5: All Others: Collection Class/API, Generics, String Tokenizer, Locale Class, Date API, Timer, Calendar, Comparator & Cursors.**
+**5: All Others: Collection Class/API, Generics, String Tokenizer, Locale Class, Date API, Timer, Calendar, Comparator & Cursors.**  
+-------------------------
 
 **Sub-topics:**  
 1: Collection class VS collection interfaces:   
