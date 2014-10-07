@@ -197,3 +197,26 @@ Classes are: HashSet & LinkedHashSet & TreeSet.
 - For ex::   
 - 1: Return Students from database table ‘student’ and remove duplicate student names and return all students in random order– Best to use Hashset.  You have two requirements. Avoid duplicates + return in the random order.  
 - 2: Return Students from database table ‘student’ and remove duplicate student names and return all students in the same order – Best to use Linked Hashset.  You have two requirements. Avoid duplicates + return in the order.
+
+**4: Diff between System.identityHashcode  and hashcode.**  
+Both are for representing hashcodes only. But identity Hashcode is the original hashcode, where hashcode contains programmatic hashcode format. Both represents in hexadecimal format only. For some purposes JVM introduced hashcode concept when identity Hashcode exists. 
+
+**5: How SortedSet & TreeSet removes duplicates & sorts?**  
+1: Tree Set is child of SortedSet. TreeSet is a class and SortedSet is Interface. So Tree Set extends SortedSet.   
+2: Basically SortedSets/TreeSet are used for sorting values. For ex: 1: Return Students from database table ‘student’ and remove duplicate student names and return students based on “StudentId in ascending order”. You have two requirements. Avoid duplicates + return in StudentId Asc order –so, best to use TreeSet.   
+3: By default JVM returns in ascending order on Treeset.   
+4. How JVM sort items?  JVM by default it implements comparable interface and returns items in ascending order. That means, it sorts all pre-defined like ‘primitive’, Wrapper and String/String buffer.     
+5.Comparable interface have method compare to. It is something like ‘How equals method uses hashcode method’.   
+6:What if you need to sort custom/user defined Objects. Solution is: Override comparable & compareTo methods, in such a way that, ask them to compare your objects OR your object fields. What ever you want. Override concept is also very simple. Below one example.   
+- You have Employee class with fields empNo, empName & empSal. Now you created two objects for two employees.  You want to sort below two employee objects with empNO.    
+- Employee e1 = new Employee(1, “Sajta”, 1000)  
+- Employee e2 = new Employee(202, “Sajta”, 1000)   
+- Employee e2 = new Employee(2, “Sajta”, 1000)   
+- Employee e2 = new Employee(33, “Sajta”, 1000)   
+- Solution is, override compareTo method to compare the content of empNo. Return 1, -1 and 0 for >, < & ==.    
+Override comparable method to use above override compareTo method. If value is 1 then keep it in the front, if value is -1 then place it back, if value is 0(means duplicated) then remove it.   
+- Keep all these in the same class where you have your TreeSet.  
+- While executing values to TreeSet, it checks if this value is duplicated & sort , if duplicated then remove it, if value is big then keep it in the front, if value is small then keep it in the back.  
+ 
+7: Only one null value is allowed if it is first value. Otherwise null is not allowed anywhere except at beginning. 8: Remember only one null value is allowed. Multiple null not allowed. Since it replaces existing null values.  Sorted Set: This is just an interface – there is nothing much to learn about it.  
+Tree Set: is the mostly used.  
