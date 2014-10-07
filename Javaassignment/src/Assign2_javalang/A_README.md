@@ -190,3 +190,49 @@ There are not programming methods to conversion in primitive types. Where wrappe
 1: Primitive --> String  & String -->  Primitive  
 2: String --> Wrapper  & Wrapper --> Primitive  
 3: Primitive --> Wrapper  & Wrapper --> Primitive
+
+Note: Before 1.5, java didn’t support on converting primitive to wrapper and wrapper to primitive.  In java 1.5 you can directly convert primitive to wrapper classes & wrapper to primitive type.  But in cases 1 & 2, you still have to use methods only.
+
+*****************************************************************************
+**7: Math class api**   
+API Index: http://docs.oracle.com/javase/1.4.2/docs/api/index.html  
+1: The Math class serves as a grouping of mathematical functions and constants.  
+2: It is interesting to note that all the variables and methods in Math are static, and  the Math class itself is final.   
+3: This means you can’t derive new classes from Math. Additionally, you can’t instantiate the Math class
+
+*****************************************************************************
+**8: AutoBoxing & AutoUnBoxing**   
+AutoBoxing: Automatic conversion by the compiler from primitive type to the corresponding object form/wrapper form is called AutoBoxing.  
+Ex: int i=10; //Compile time error in 1.4 but valid in 1.5  
+Integer I=i;   
+Compiler first constructs the integer object and then assigned that object to the variable.  
+
+**AutoUnBoxing:**  
+Automatic conversion from wrapper class object to primitive type by the compiler is called AutoUnBoxing.  
+Ex: Integer I= new Integer(10);  
+int i= I; //CTE :1.4  
+// valid in 1.5s
+
+*****************************************************************************
+**9: System class**      
+1: Both classes System and Runtime provides runtime environment resources(properties & behaviors) for your programs  2: Like Math API, System class is also final and is entirely composed of static variables and methods.   
+3: The System class basically provides a system-independent programming interface to system resources. Examples of system resources include the standard input and output streams, System.in and System.out, which typically model the keyboard and monitor.  
+4: When runtime system first starts up, the system properties are initialized to contain information about the runtime environment like the current user, the current version of the Java runtime, and even the character used to separate components of a filename.  
+5: System properties only define inside a method not at class level.
+Below is a complete list of the system properties you get when the runtime system first starts up and what they mean: 
+
+**Key Meaning**  
+file.separator --------- File separator (e.g., "/")  
+java.class.path--------- Java classpath  
+java.class.version ------Java class version number  
+java.home -------------Java installation directory  
+java.vendor ------------Java vendor-specific string  
+java.vendor.url ---------Java vendor URL  
+java.version ------------ Java version number  
+line.separator -----------Line separator  
+os.arch -----------------Operating system architecture  
+os.name --------------- Operating system name  
+path.separator --------Path separator (e.g., ":")  
+user.dir ---------------User's current working directory  
+user.home -------------User home directory  
+user.name--------------User account name  
