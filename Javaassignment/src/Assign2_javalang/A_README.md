@@ -37,6 +37,9 @@ Object Class > Class B > Class A.
 |-------------|-------------|-------------|
 |Obj1|Obj2|Obj3|Obj4|
 
+| 1234444        |      34333      |  4444888 | 9843549 |
+| ------------- |-------------| -----|------------|
+| Obj1 | obj2 |obj3 | obj4 |
 
 The following are called hashcodes. 1234444,  34333,  4444888 & 9843549.  
 Object.hashcode – to return hashcode for a object  
@@ -62,7 +65,7 @@ s.IsAbstract(); r // return if class is abstract class. True or false
 
 Note: you need to add the below code to method where are you create an object for the Class API.  
 throws ClassNotFoundException  
-For ex:
+For ex:    
         public static void  main(String args[]) throws ClassNotFoundException {    
          Class c = Class.forName("Remove");  
          System.out.println(c.getPackage());  
