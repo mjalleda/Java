@@ -174,3 +174,43 @@ Usually, in method overriding method, all methods are called based on object typ
 **10:Why final methods can’t be override:**  
 Final methods means final implementation. You shouldn’t override it. But if you extend a class where final method is defined, then that final method can be visible in subclass.   
 So subclass cant contain a method which is similar to final method name and signature. 	Since complier thinks that you are overriding final method and it will not allow you to do 	that.
+
+******************************************************************************
+**6: Constructor**  
+Any Programs created: Yes  
+Program Names: HowtoUseConstructors
+
+**Sub-Topics:**
+1: Constructor  
+2: Main purpose   
+3: Default constructor   
+4: Parameterized constructor   
+
+**1: Constructor:** There are two types of constructors. Default constructor and parameterized constructor. 
+
+**2: Main purpose:**   
+Basically to initialize instance variables before object is created. Let’s take a real time example. You want to pass username and password to make a connection to database before actual object is created, you can pass them in constructor. So before object is created, compiler will execute the constructor to make db connection with uname and password.
+
+**3: Default constructor:** Basically if you don’t create any constructor or a default constructor, compiler will create a default constructor when you create an object. 
+
+PublicA Obj1  = new PUBLICA // PUBLICA is constructor & PublicA is classname. New is operator and obj1 is object name.
+
+One class can have multiple parametrized constructors with different arguments ( could be different number or Same number with different datatype arguments).  
+For ex:    
+1: PublicA(int a, int b) { }  
+2: PublicA(int c, char d) {}   
+3: PublicA(int a, int b, intc) {}  
+4. PublicA(int c, int d) {}
+
+At one time, 1,2 & 3 are allowed..  
+But at one time 1 & 2 are not allowed because they have same number of arguments + same number of datatype arguments.
+
+**4: Parameterized constructor:** means you can pass parameters/arguments in a constructor.   
+**Difference between method and constructor:**   
+- Method has return type void/int/char but Constructor has no return type.   
+- You can’t use methods before main but you can use before main.
+	
+
+
+	
+
