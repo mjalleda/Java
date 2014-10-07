@@ -217,6 +217,20 @@ If you know a method exists in C/C++ api, then you can define that method with n
 Why it is introduced? : Before java 1.4, floating point variables to take 32 bits if OS is 32 bit OS, otherwise it takes 64bits if OS is 64bit OS. Code may not run if you run the 32 bit code on 64 bit and vise versa.
 To avoid this problem, java introduced Strictfp. Basically we define Strcitfp for classes not for methods or variables. Inside that class, all floating point variables take same number of decimal points that you have. Basically it goes by IEEE standards.
 
+
 ******************************************************************************
-			
+**14: Variable argument method**  
+Any programs created: NO  
+This is 1.5 feature. variable argument methods (var-arg methods)allow us to specify that a method can take multiple arguments of the same type and allows the number of arguments to be variable.  
+
+             Void m1(int..i)  
+		{  
+			….  
+		}
+	 	Public static void main (String args[])
+                {
+                	System.out.println(args[0]);
+                	System.out.println(args[1]);
+                }
+		}
 
