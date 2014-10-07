@@ -450,11 +450,41 @@ Constructor is nothing but: It will contain same name as classname. But it will 
         	{  				// Instance block  
 			m=msg(“2”);  
 		}  
-		
 		public static void main(String a[])  // Main method  
 		{  
-			Object o=new Object();  
+		Object o=new Object();  
 		}  
 	}
 
+**3: Java execution flow order should be:** Priority order start from 
+Static variables > then it goes to static block > then it goes to  Instance variables > then it goes to  Instance block >  then it goes to  Constructor >  then it goes to  others like main method.  
+1: static variable wants to print msg(“1”)  --> it goes to method msg() and prints : 1   
+2: static block wants to print msg(“3”) --> it goes to method msg() and prints: 3  
+3: There is no instance variables  
+4. Instance block wants to print msg(“2”) --> it goes to method msg() and prints : 2  
+5. The constructor “object” is not created, so nothing will print.
 
+
+One more program:
+        public class Myclass //class name  
+        {  
+        public static void main(s[] a) // Main method  
+        {  
+        Myclass obj= new Myclass(l);  
+        }
+
+        static int i=5; // static variables 
+static int l; 	// static variables
+int j=7; int k; // Instance variables.
+public Myclass(int m)  		// constructor
+{
+System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);
+}
+{                 			 //Instance initialize block
+J=70; l=20; 
+}
+Static 					 //static Initialize block
+{
+i=50;
+} 
+}
