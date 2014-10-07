@@ -180,3 +180,20 @@ Classes are: HashSet & LinkedHashSet & TreeSet.
 | HashSet is parent for LinkedHashSet.   | |
 |LinkedHashSet - order is not preserved. It return values based on value hashcode.   |LinkedHashSet - order is not preserved. It retunr values in the order they are initialized. |
 
+**3: How HashSet/Linked Hashset removes duplicates & compare?**  
+- JVM needs to compare values in order to know if that value is duplicated or not ? For ex: a(=1) & b(=1). JVM needs to compare if a equal to b or not. For this, JVM uses Object.equals method. So you can say by default it uses equals method.   
+- Equals method – Compare two values based on their hashcode. If a’s hashcode is 123@skfFedl  & b’s hashcode is 344@9FKajh.  So equal method works based on  hashcode concept.    
+- What is hashcode – JVM returns Object’s memoryLocation address in hexadecimal format. Basically each object located in separate memory location. Hashcode represents that memory location address.    
+- All Set classes, by default they use hashcode method to compare values. If they find a value is same/duplicated, then Set classes don’t allow the second duplicate value.   
+- JVM knows how to use Object.equals method on predefind, Wrapper, String/string buffer. But how it doesn’t know how to compare user-defined Objects like Employee & EmpSalary. So what is the solution.    
+- Solution is: Override equals & hashcode method, in such a way that, ask them to compare your objects OR your object fields. What ever you want. Override concept is also very simple. Below one example.   
+- You have Employee class with fields empNo, empName & empSal. Now you created two objects for two employees.  You want to compare below two employee objects with empNO.    
+  Employee e1 = new Employee(1, “Sajta”, 1000)  
+  Employee e2 = new Employee(2, “Sajta”, 1000)   
+- Solution is, override hashcode method to compare the content of empNo. If they match return 1 otherwise 0.    Override equals methods to use above override hashcode method. If value is 1 then duplicated, if it is 0 then not duplicated.   
+- Keep all these in the same class where you have your Set class is (it may be hashSet, LinkedHashSet or Sorted Hashset).  
+- So override equals method in the same class, later your set class calls only that method.   
+- While adding values to Set, it checks if this value is duplicated with help of equals method. If so, it doesn’t allow. You can print and check.  
+- For ex::   
+- 1: Return Students from database table ‘student’ and remove duplicate student names and return all students in random order– Best to use Hashset.  You have two requirements. Avoid duplicates + return in the random order.  
+- 2: Return Students from database table ‘student’ and remove duplicate student names and return all students in the same order – Best to use Linked Hashset.  You have two requirements. Avoid duplicates + return in the order.
