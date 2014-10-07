@@ -143,10 +143,7 @@ always static. In any program language the code should be saved into memory with
 **String args[]** : It means, main method is expecting array of strings. That means, for ex: if you are creating a website, then you want to user to enter dynamic values every time, then you can give array of strings.   
 Create below class and then right click > run as > run configuration > arguments > enter 10 30 > then apply> then it will print 10 & 20 as output. 
 
-
-       * item text::
-
-                Class super  
+	Class super  
                 {
                 Public static void main (String args[])
                 {
