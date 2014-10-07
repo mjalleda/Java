@@ -379,5 +379,20 @@ There is no much difference between comparable & comparator. Except that, compar
 - hasMoreElements()     
 - nextElement()    
 
- 
+**9.4: Difference between Iterator, ListIterator and Enumerator.**
+| Iterator  |ListIterator |Enumerator|
+| ------------- |-------------||
+| 1: Iterator is defined in collection interface, so Iterator can be used in any collection implemented classes
+|ListIterator only implemented in List, so it can be used only in ListImplemented classes.   |Enumerator only used in legacy classes, like hashcode, hashtable and vector. |
+| Iterator has three main methods. hasnext, next and remove.  |It has total 11 methods. |It has also many, but the important and not used one is element.|
+
+
+
+
+
+
+
+
+
+
 
