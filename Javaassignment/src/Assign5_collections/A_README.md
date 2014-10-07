@@ -145,3 +145,37 @@ Summary: ArrayList & LinkedList are good.
 | You can use for & for each loop. Since all lists are index based.  |You can use for & for each loop. Since all lists are index based. |You can use for & for each loop. Since all lists are index based.|
 | All three are used to transfer set of values (in a object) from one layer to another layer. Or from one place to another place. For ex: transferring from DEO to Service layer.  | ||
 | ArrayList is not legacy class  | Vector is a legacy class|LinkedList is not legacy class|
+
+******************************************************************************  
+**3: All Sets Classes**
+
+**Sub-Topics:**  
+1: Sets & Hirarchy.  
+2: Difference between Hashset & ListHashSet  
+3: How HashSet/Linked Hashset removes duplicates & compare   
+4: Diff between System.identityHashcode  and hashcode.  
+5: How SortedSet & TreeSet removes duplicates & sorts?
+
+**1: Sets & Hirarchy**  
+In Sets,   
+Interfaces are:  Set & Sorted Set   
+Classes are: HashSet & LinkedHashSet & TreeSet.
+
+1: Sets is a interface which implements collection interface  
+2: Sets: In the map:  
+- Collection is a interface  
+- Set is interface which implements Collection  
+- HashSet is a class which implements collection & set interfaces.  
+- SortedSet is a interface which implements Set & Collection interfaces.  
+- LinkedHasSet is a class which extends HashSet.  
+- Again Treet Set is a class which extends SortedSet.  
+
+3: Purpose is of Sets is same as Lists : the only difference is, it doesn’t allow duplicates. 
+
+**2: Difference between Hashset & ListHashSet**  
+|  HashSet |LinkedHashSet |
+| ------------- |-------------|
+| Both are from Sets  | |
+| HashSet is parent for LinkedHashSet.   | |
+|LinkedHashSet - order is not preserved. It return values based on value hashcode.   |LinkedHashSet - order is not preserved. It retunr values in the order they are initialized. |
+
