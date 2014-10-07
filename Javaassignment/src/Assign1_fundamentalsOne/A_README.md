@@ -501,6 +501,6 @@ Exer21_SuperThisClassB
 **Super:** super is a keyword which is used to refer the super class from a sub class. -- You can only refer to superclass Instance variables, Installable blocks, Instance methods and constructors	  
 You can’t refer to superclass’s static methods and variables.
 
-**This:** This is a keyword which is used within the same class.   
-	- You can only refer to this class’s Instance variables, instance blocks, Instance methods and constructors
-	- You can’t refer to this class static variables, static blocks and static methods
+**This:** This is a keyword which is used within the same class.  
+-	You can only refer to this class’s Instance variables, instance blocks, Instance methods and constructors.
+-	You can’t refer to this class static variables, static blocks and static methods
