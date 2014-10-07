@@ -99,17 +99,17 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 - Basically if you know you are inserting only employee objects/data into one list, you can define that List as more generic, so return type would also be employee object type. So that means, you are avoiding typecasting while returning objects in Object type. These are more widely used. Generic doesn’t allow any other values except its own(ex: employee) objects.   
 - But in raw type, you can have all types of values, but return type should need typecasted. 
 
-**11: Difference between Synchronized and Volatile** 
-| Synchronized methods/blocks|Volatile variable|
-| ------------- |-------------|
-| 1: This only used for methods and blocks. |1.: This only used for variables. |
-|2: This keyword used to allow only one thread to execute at one time. Basically protects statid and instance methods & blocks. |2: This keyword gives separate copy for each thread. Basically protects variable/|
-|3: This is used to avoid data incosistency problems |-------------|
+**11: Difference between Synchronized and Volatile**   
+| Synchronized methods/blocks|Volatile variable|  
+| ------------- |-------------|  
+| 1: This only used for methods and blocks. |1.: This only used for variables. |  
+|2: This keyword used to allow only one thread to execute at one time. Basically protects statid and instance methods & blocks. |2: This keyword gives separate copy for each thread. Basically protects variable/|  
+|3: This is used to avoid data incosistency problems |-------------|  
 | ------------- |3: This is also used to avoid data inconsistency problems|
 
-**12: Difference between Threads & Processors**  
-| Threads| Processors|
-| ------------- |-------------|
-|1: All threads share same memory| Each process have thier own memory, they dont share memory most of the time|
+**12: Difference between Threads & Processors**    
+| Threads| Processors|  
+| ------------- |-------------|  
+|1: All threads share same memory| Each process have thier own memory, they dont share memory most of the time|  
 |They use low CPU usage|They use high CPU usage|
 
