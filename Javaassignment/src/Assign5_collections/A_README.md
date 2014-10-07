@@ -313,7 +313,23 @@ Common: All three uses same iterator method inside to iterate each key-value.
 8: Comparator.  
 9: Cursors.  
 
+**1: Collection class VS collection interfaces: **     
+Collection class is a class which is different from collection interface. Where collection interface have its own sub sets like Lists and Sets. but collection class is just like a API class something like Class, Object or System classes.    
+Collection class have some methods like sort, search, binary search, linear search, synchronized…all these can be used in collection interface objects. i.e., we can use them in Lists, Sets & Maps.    
+If you are using any collection method, then you have to extends collection interface.    
+Ex: public className extends Collection.   
+A question is:  When all Lists, Sets and Maps classes required all sorting mechanism and searching mechanism, why these methods are not directly implemented on them ? why we have to extends Collection class for these?    
+Answer is:  all these are common methods which are used in all Lists, Sets and Maps. Hence they given in  on e API (that means Collection class) and every time we access them from that API.    
 
+**2: Generics VS Raw classes (Lists, Sets and Maps):**   
+Generics are more used than raw classes. i.e.,    
+Generic is ArrayList <Employee> AL1 = <Employee> new ArrayList();   
+Raw type is ArrayList AL1 = new ArrayList();   
+
+**3: String tokenizer:** To separate strings by using    
+- space “ “  or   
+- any characters or multiple characters   
+- separate strings by removing characters   
 
 
 
