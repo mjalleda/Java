@@ -449,8 +449,8 @@ Constructor is nothing but: It will contain same name as classname. But it will 
         	}  
         	{  				// Instance block  
 			m=msg(“2”);  
-		}  
-		public static void main(String a[])  // Main method  
+			}  
+			public static void main(String a[])  // Main method  
 		{  
 		Object o=new Object();  
 		}  
@@ -465,7 +465,8 @@ Static variables > then it goes to static block > then it goes to  Instance vari
 5. The constructor “object” is not created, so nothing will print.
 
 
-One more program:
+One more program:  
+
         public class Myclass //class name  
         {  
         public static void main(s[] a) // Main method  
@@ -473,18 +474,18 @@ One more program:
         Myclass obj= new Myclass(l);  
         }
 
-        static int i=5; // static variables 
-static int l; 	// static variables
-int j=7; int k; // Instance variables.
-public Myclass(int m)  		// constructor
-{
-System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);
-}
-{                 			 //Instance initialize block
-J=70; l=20; 
-}
-Static 					 //static Initialize block
-{
-i=50;
-} 
-}
+        static int i=5; // static variables   
+        static int l; 	// static variables  
+        int j=7; int k; // Instance variables.  
+        public Myclass(int m)  		// constructor  
+        	{  
+        	System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);  
+        	}  
+               	{                 			 //Instance initialize block  
+               	J=70; l=20;   
+               	}  
+               	Static 					 //static Initialize block  
+               	{  
+               	i=50;  
+               	}   
+               	}
