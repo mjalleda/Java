@@ -100,8 +100,9 @@ But for ex: if all above classes implemented some methods, let say if 6 methods 
 - ArrayList  
 - Vectors  
 - LinkedList  
-- Finally stack.  
-7. Size (arrayList, linked list, vector list and stack) grows dynamically for collections unlike concrete classes.   
+- Finally stack.    
+
+7. Size (arrayList, linked list, vector list and stack) grows dynamically for collections unlike concrete classes.  
 8: Even, List & sets share common methods like Iterator.  
 9: All lists & sets holds objects, by default its size is 10 but JVM dynamically grows its size.  
 10: List & Sets can have, wrapper class object, Object class object, another class (for ex: employee) class object and also directly primitive values are allowed. For theory we say, primitives are not allowed in Collections, but if you initialize some primitive values in array list, JVM in the background it runs autoboxing and autounboxing mechanism and convert them into wrapper classes.  
