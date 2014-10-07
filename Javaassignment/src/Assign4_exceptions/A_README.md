@@ -161,9 +161,70 @@ Yes, it is opposite with method overriding.
 **7: Throws VS Throw.**
 
 | Throws        |      Throw      |
-| ------------- |:-------------:|
+| ------------- |-------------|
 |Throws is used while defining method signature or class signature. That means, who ever calls this method/class, they have to handle the exception, if JVM is the caller then JVM needs to handle it.|Throw is mostly used to throw custom exceptions. Basically if this happens throw my own exception.  It can also return predefined exception but what is the use, jvm also returns predefined exceptions.|
 ||1: Either write throw in try blcok and handle it in catch block.OR 2: If you are not putting in try&catch block, then add throws to method signature. Since when throw occurs, it can be returned inside a method it can't go outside, either you have to catch it or tell somebody to throw it outside. Hence we use throws keyword to throw a custom exception out of the method.|
 |This works only with method/class.|This is only used inside a method|
 |For ex: Public parent throws Exception|throw e;|
 |Both are used only with exceptions Exception|Both are used only with exceptions
+
+******************************************************************************   					
+**Try, catch & Finally**
+
+**1: Try and catch block:** If you know some code generates exception write that danger code in try block and if that code returns any exception capture that in catch block. Basically after catch block, control goes to next line of catch block.
+
+**2: Catch block:** If any exception occurs in try block, then only control goes to catch block otherwise it won’t go to catch block. If code has no catch block then it continues to the next line after try.
+
+**3: Finally block:** If code has all three try, catch & finally. It doesn’t matter if try block has exception or not, when control goes to try block, it will definitely go to finally block. So opposite to catch block since if try block has exception then only control goes to catch block.
+
+**4: Valid & Invalid Combinations:**  
+If code has,  
+- Only try block – not valid  
+- Only catch block – not valid  
+- Only finally block – not valid
+
+**4.1: Try with single catch**  
+- Combination1: try & catch block – valid  
+- Combination2: try & finally block –valid  
+- Combination3: All three try, catch & finally –valid  
+- Combination4: catch & finally  - not valid.
+
+**4.2: Try with multiple catches**  
+- Combination1: try & multiple catches blocks – valid  
+- Combination2: try, multiple catches & finally –valid  
+- Combination3: try & multiple finally blocks – not valid
+
+**4.3: Order of Try, catch & Finally.**  
+- Order1: Try --> catch --> finally – is valid  
+- Order 2: Try --> catch1 --> catch2 --> catch3--> finally – Valid  
+- Order 3: Try --> finally  --> catch1 --> catch2 --> catch3  – NOT valid  
+- Order 4: Try --> catch1 --> catch2 --> finally --> catch3 –  NOT Invalid
+
+**4.4: Order with allowed exceptions** (relation should be parent to child “co-variant”)  
+For above orders:  
+**Order1:**   
+try --> Arithmetic catch block 1 --> nullpointerCatchblock 2 == Is valid (since they both are defined at same level in library, since both are children for Exception)
+
+**Order2:**   
+try --> ExceptionCatchblock1 --> Arthemetch catch block 2 --> nullpointerCatchblock 3 == Is valid (since they both are defined as “co-variant” level, parent first and then children)
+
+**Order3:**   
+try -->  Arithmetic catch block 1 --> ExceptionCatchblock1 == Is NOT valid (since they both are not defined as “co-variant” level or same level. Child(arithmetic Exception) is coded before Parent (Exception).)
+
+**5: What is the purpose of having multiple catches :**   
+1: This is widely used   
+2: Scenario1: We are not sure if the code in try block returns nullpointer or arithmetic or arrayIndex….so when you don’t know what it returns, so how would you catch multiple exceptions ? So you need multiple catch blocks. One for nullpointer, one for arithmetic and one for arrayIndex..  
+2.1: You may ask instead of writing all three catches, you can write a single catch with Exceptions (since this is parent for all three) ? Yes, it is valid, if you don’t know what will return, you can write a single catch with Exceptions.  
+3: Scenario 2: We are not sure if the code in try block returns nullpointer or arithmetic or arrayIndex….so when you don’t know what it returns, so how would you catch multiple exceptions ? So you need multiple catch blocks. One for nullpointer, one for arithmetic and one for arrayIndex. For ex: When control gets to arithmetic catch block, you want to extend the code (from try block) inside arithmetic catch block. If you want to do this for all three exception, it might not be possible to put all three in one single Exception catch block, so it is better to code three catch blocks, one for each exception.   
+3.1: You may ask instead of extending the logic in all three catches, you can write a single catch with Exception (since this is parent for all three) ? No. For ex: if nullpointer exception not occurred but you extended logic for it, it might break the code somewhere else. If you want to extend the logic better to write its own catch block for that exception.
+
+**6: Rule:** If you have multiple catches, control execute them in the order (top to bottom).   
+For ex:  You have three catch blocks (for arithmetic, nullpointer and arrayIndex). Let’s say their order is   
+Try {}     
+catch (nullpointerexception e) {}  
+catch (arrayIndexexception e3) {}   
+catch (arithmetic e) {}   
+Lets say, try block has some danger code and it generated arithmetic exception.   
+First control goes to first catch block, and it finds its not arithmetic exception catch block.  
+Later control goes to second catch block, it finds its is not arithmetic exception catch block.  
+Later control goes to third catch block, it finds it finds it is arithmetic exception catch block and executes the code.
