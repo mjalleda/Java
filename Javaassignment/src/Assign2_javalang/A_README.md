@@ -31,6 +31,7 @@ Object Class > Class B > Class A.
        // code   
        }
 
+
 **2: Hashcode:** In generally, all objects/variables/all stores in memory. System provides an id to each object in memory for identification. This id is called hashcode. All objects/classes/variables contains hashcode. 
 
 | 1234444        |      34333      |  4444888 | 9843549 |
@@ -101,3 +102,65 @@ It should print
 10  
 N  
 100
+
+******************************************************************************
+**2: ENUM**  
+1: Enum is collection of constants. For ex: If I want to define to get/store input/output data, I can provide filepath/variable as a constant that never changes. For ex: if I have the same kind of requirement 20 times, instead of writing all 20 variables, I can just define them in one Enum variable and call that variable everywhere in my classes (with classname.enum.constant).  
+2: We can create Enum constructor also.   
+3: There are multiple methods are implemented on enum like iterator, hasNExt, values, getenum.   
+4: Enum is widely used in switch class.
+
+********************************* *************************************
+**3: Strings & 4: string buffer,StringBuilder**    
+
+Sub-Topics:
+1: String API:  
+2: Difference between: String constant pool and Heap memory.   
+3: How they uses memory:  
+4: Difference between String API and string buffer API.   
+5: Why to use String buffer why not String?  
+6: What is mutable:   
+7: Why String builder is introduced when String and string buffer are there:
+
+**1: String API:**  There are three different types of String APIs. String API, string buffer API and String Builder API. Don’t get confuse between String API and regular datatype String. Both are different.  
+We can create objects of string type. For ex:  
+String s = new String(“laxmi”);  //  Here s is object, with this object you can get all String API methods.  
+Or you cal also define  
+String s = “laxmi”. Here you are not using primitive String datatype not API class. Here s1 is not object so you won’t get String API methods with S1 variables.  
+Why do we need String API methods. For ex: If you want to compare, concatenate, equal two strings first you need to create objects for them and then can use all these methods. 
+
+String is nothing but collection of characters. It is an API class so it has some methods. We can use them.   
+All three APIs get stored into heap memory only.  
+Syntax:  
+String s = new String(“laxmi”);  
+string buffer sb = new string buffer(“laxmi”);  
+Stringbuilder sbd = new Stringbuilder(“laxmi”);
+
+2: Difference between: String constant pool and Heap memory.   
+Java uses both String constant pool and heap memory. String API objects uses heap memory and regular string variables uses String constant pool memory.   
+1: String s = new String(“laxmi”);  
+2: String s1 = “Laxmi”.   
+1st one stores in heap memory with reference s.   
+2nd stores in string constant pool memory. 
+
+3: How they uses memory: Take a scenario with 4 variables/objects.  
+String S1 = new String(“laxmi”);  
+String S2 = new String(“Laxmi”);
+
+String S3 = “Laxmi”;  
+String s4 = “Laxmi”;  
+
+**4: Difference between String API and string buffer API.** Both are string API classes only both are stored in heap memory only. But when you modify String object, JVM will create a new object in the memory and garbage collect the old one. In case of string buffer JVM will modify the existing object the new object is not created whenever string buffer object is modified. That’s why it is advisable to use string buffer if you keep change/modify string values, because it will not create new object every time, just modify the existing object.  Indirectly for better memory management use string buffer not String.
+
+**5: Why to use String buffer why not String?** If you are constantly modifying string value, so it is advisable to use string buffer not string type. Since there are two advantages with string buffer
+Better memory management
+String is immutable where string buffer is mutable.
+
+**6: What is mutable:** you can modify an object value within same memory location instead of creating a new object in memory. 
+
+**7: Why String builder is introduced when String and string buffer are there:**  
+String and String buffer are not synchronized but where String builder is synchronized  
+Multiple processor can’t access string buffer objects at same time
+
+The behavior of these three APIs are very different when you apply API methods on it. For ex: Equal method. Please check assignment for it.
+
