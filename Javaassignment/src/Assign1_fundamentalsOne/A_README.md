@@ -261,3 +261,84 @@ concreteUseAbstractA
 Abstract check box + Public radio button.
 
 **4: We can’t create objects for abstract class. Why?** You don’t implementation in abstract methods, if you try to create a object for abstract class and you call abstract methods with help of object, JVM doesn’t know what to do since there is no implementation for abstract methods but call is made, so it will be crashed. That’s why Java not allow to create object for abstract class.
+
+
+******************************************************************************
+**16:GARBAGE COLLECTION**  
+Any programs created: NO  
+In java, garbage collections runs in background. For better memory management, java uses garbage collections.  In java we set some memory for heap and when we create objects, they take place in heap memory. When it occupies 80% of heap memory, in the background java runs the garbage collectors clean up the heap memory. Other wise you can run below line. You can run this only inside block/method not at class level.
+System gc();
+
+******************************************************************************
+**17: INNER CLASSES**  
+Any programs created:Yes  
+Programs names:   
+Exer17_Inner class.java  
+Exer17_Inner classes.java  
+Exer17_StaticInner class.java  
+Exer17_MethodLocalInner class.java  
+Exer17_AnonymousInner classA.java  
+Exer17_AnonymousInner classB.java  
+Exer17_AnonymousInner classC.java
+
+There are 4 types of Inner Classes:  
+-	Inner classes  
+-	Static inner classes    
+-	Method Local Inner classes  
+-	Anonymous classes
+
+**1: Inner class:**  
+How to create > How to call > Generate errors (including create both variables and call them)  
+Access modifiers, Purpose of Inner classes with example.  
+	1: Are also called Instance inner classes.  
+	2: inner classes are completely different from static Inner class.   
+	3: Since instance methods/variables only be called by object, so Instance Inner classes are also called by 		object. That means, you can’t call them before creating an object.   
+	4: Inside a main method, after creating an object for a class you have to create an object for this inner 		class and then call it OR Inside static main method, if you directly create an object for this class 		before creating an object for the mainclass is not possible.   
+	5: In this class, you can define both static and instance variables.  
+
+**Purpose of inner class:** For ex:  If a class has 10 methods and 10 variables. Every time you are calling these 10 variables in 10 different methods individually.  
+**Disadvantage:** time consuming, number of lines of code increased.  
+**Solution:** Better to create a inner class and define all these variables inside inner class and call inner class only in 10 different methods. 
+
+**2: Static inner class:**   
+How to create > How to call > Generate errors (including create both variables and call them)  
+Purpose of static classes with example.  
+StaticInner class.java  
+1: Static inner classes are completely different from Inner class.   
+2: Since static is directly called without an object so Static Inner classes are directly callable without object. Inside main method, before creating an object for a class you can directly call static inner class.   
+3: In this class, you can define only static variables.   
+4: If you have instance variables inside static inner class, you can’t call them before creating an object. For any instance variable you have to create an object in order to call them.
+
+**3: Method Local Inner class:**  How to code this class, how to access it, how you can’t access it.  MethodLocalInner class.java  
+**Method local classes:** Are defined only inside a method which are not accessible from outside of that method. Obviously not accessible from outside of a class. 
+
+**4: Anonymous Inner class:**   
+How to declare, its structure, error generation.  
+Purpose – Override methods on concrete class  
+Purpose – aslo implements methods of abstract class/Interfaces  
+Relationships:   
+AnonymousInner classA.java  
+AnonymousInner classB.java  
+AnonymousInner classC.java
+1: Are the most used anonymous inner classes  
+2: We can use these Inner class to overiride methods, implementing abstract methods, implementing interfaces.  
+3. Anonymous class contain the classname of method’s classname. Since there are not keywords for it.  
+4. 4: These classes don’t look like a class template, they have the same name as classname and ; will be placed at the end body. Basically you create a object for the class and use that object as anonymous inner classes.
+
+**4.1: Why Anonymous classes were introduced:** In older versions of java, it doesn’t allow to extend multiple classes, we can’t override methods without extending their classes.  
+So, java introduced Anonymous Inner class. With this class, you no need to extend a class but you can override that class methods. Lets take an example.     
+You have three classes ClassA, ClassB and ClassC.   
+	ClassB extends ClassA for some reasons  
+	ClassA can’t extend ClassC since multiple classes can’t be extended in java  
+	But ClassB wants to override ClassC methods. 
+
+**4.2: Old versions of java** - It was not possible.  
+Newer versions of java: In classB, you can create a Anonymous class for ClassC & can extends ClassC methods inside AnonymousClass. 
+
+**5: General:**   
+Priority of Inner classes are:   
+Anonymous classes > Inner classes > Static Inner classes > and then Method Inner classes  
+1: Anonymous classes are mostly used, very few times we use inner classes, very rarely static classes, very very rarely we use method local classes.  
+2: None of these are accessed from outside.  
+3: By default all Inner classes are private, even if you define them as public there will be no use, since they are not allowed from outside.  
+**Disadvantage:** You can’t access any Inner class from outside of the class.
