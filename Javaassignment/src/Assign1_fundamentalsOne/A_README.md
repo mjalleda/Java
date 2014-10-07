@@ -451,10 +451,10 @@ Constructor is nothing but: It will contain same name as classname. But it will 
 			m=msg(“2”);  
 			}  
 			public static void main(String a[])  // Main method  
-		{  
-		Object o=new Object();  
-		}  
-	}
+			{  
+			Object o=new Object();
+			}
+			}
 
 **3: Java execution flow order should be:** Priority order start from 
 Static variables > then it goes to static block > then it goes to  Instance variables > then it goes to  Instance block >  then it goes to  Constructor >  then it goes to  others like main method.  
@@ -489,3 +489,18 @@ One more program:
                	i=50;  
                	}   
                	}
+
+
+*****************************************************************************
+**21: Super & This**  
+Any programs created: Yes  
+Programs Names:   
+Exer21_SuperThisClassA  
+Exer21_SuperThisClassB
+
+**Super:** super is a keyword which is used to refer the super class from a sub class. -- You can only refer to superclass Instance variables, Installable blocks, Instance methods and constructors	  
+You can’t refer to superclass’s static methods and variables.
+
+**This:** This is a keyword which is used within the same class.   
+	- You can only refer to this class’s Instance variables, instance blocks, Instance methods and constructors
+	- You can’t refer to this class static variables, static blocks and static methods
