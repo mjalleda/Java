@@ -101,6 +101,7 @@ But for ex: if all above classes implemented some methods, let say if 6 methods 
 - Vectors  
 - LinkedList    
 - Stack.
+
 7. Size (arrayList, linked list, vector list and stack) grows dynamically for collections unlike concrete classes.  
 8: Even, List & sets share common methods like Iterator.  
 9: All lists & sets holds objects, by default its size is 10 but JVM dynamically grows its size.  
@@ -114,6 +115,7 @@ But for ex: if all above classes implemented some methods, let say if 6 methods 
 
 
 **2. Difference between List & Set.**
+
 | Lists        |      Sets      |
 | ------------- |-------------|
 |Both are used to transfer set of values (using objects) in between layers like control, service or DEO.| |
