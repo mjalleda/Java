@@ -46,7 +46,7 @@ Any programs created? Yes
 2: Exer5_BothStaticInstanceVariablesAndMethodsSuperclass
 3: Exer5_BothStaticInstanceVariablesAndMethodsSubclass
 
-Instance, static and Local & Final variables:  
+**Instance, static and Local & Final variables:**    
 **Static variables:** will be declared only in class level not in method block, you can’t change static variable value but can access in both static and non static method
 
 **Final variables:** If you prefix variable with final, then you can’t change its value later.   
@@ -61,6 +61,108 @@ final int m =100; // So this is also instance variable.
 | It can be accessed directly, or by using object to that class, or by using classname.|To access instance variable outside the block. You need help of classname or object of that class. You can't call it directly. |it can't be accessed outside of the block. |  
 |1: No need to initialize while declaring it, by default it get null/0 value. 2: Final static variables must be initialized before class loaded into memory. otherwise compile time error. i.e we can perform initialization for the final static variables at one of the following places. 1. at the time of declaration. 2. 2. inside the static initialization block. Example: final static int I; static{ int i=30; } | 1:  No need to initialize while declaring it, by default it get null/0 value. 2: But For the final instance variables ,we should perform initialization other wise compile time error. The final instance variable must be initialization before constructor compiles.i.e at the time of declaration or inside instance initialization block or inside constructor. Example: final int i; public static void main(String arg[]) { Sample s=new Sample() System.out.println(s.i); // invalid }| value needs to initialized before using it otherwise it will get CTE error|
 
+******************************************************************************
+**6: Arrays:**  
+Arrays: declaration, initialization, construction  
+Any programs created: yes  
+Program Name: Exer6_ArraysDeclaration
+
+*****************************************************************************
+**7: Operators & Assignments:**  
+Any programs created: No
+• equality(==,!=)
+• relational
+• bit-wise
+• short-circuit
+• instanceof
+• cast
+• conditional(?)
+• new
+• [ ]
+Compound
+
+
+****************************************************************************
+**8. TYPE CASTING**  
+Any programs created: yes  
+Program Name: Exer8_TypeCastingObjectiveImplicationExplicit.java
+
+TypeCasting: There are two types of typecasting.
+  1: Primitive and  
+  2: Objective.  
+Both have again two types of categories. Implicit and explicit.   
+Implicit means, JVM will take care while execution.  
+Explicit means, you have to tell JVM when you code it.
+
+1: Primitive type casting:  
+byte --> short --> int --> long --> float --> double   
+char --> int --> long --> float --> double  
+That means, byte can directly convert into int. In above two diagram, jvm converts forward typecasting. That means, byte --> short, byte --> int, int --> float but not long --> int or int --> byte.
+
+******************************************************************************
+**9: Flow controls or statements:**    
+Any programs created: No  
+1: Selection statement : If-else & Switch  
+2: Iteration statement : For, For-each, While, Do-while  
+3: Transfer statement : Break, continue, return, try-catch-finally & assertion  
+4: Do-while vs While: They are quite opposite  
+5: While: As usual like others, it will check the condition first then execute the statement.  
+6: Do-while: It is opposite to while. it executes the statement then checks the condition.
+
+******************************************************************************
+**10: Coding standards:**   
+How to define name of classes, objects, variables,packages…  
+Any programs created: No
+
+******************************************************************************
+**  11: Import package:**     
+Any programs created: No  
+Basically here we talk about java source structure, the order is  
+- Package statement  
+- Import statement    
+- Class/interface/enum declaration  
+For ex:   
+Package com.sample.one  
+Import java.math;  
+Public class superclass()  
+{  
+}  
+Superclass inside “one”, One is inside “sample”, sample is inside “com”.  
+Com > sample > one > Superclass.  
+Superclass wants to inherit all math classes so it is importing.
+
+******************************************************************************
+**12: Main method**    
+**Main method** : public static void main(String args[])  
+Any programs created: No  
+Public static void main(String args[])  
+{  
+}  
+Public: We use public to give access to outsider of main. Since Java programs  
+executed from main line, so JVM has to access main method, that means outsiders needs to access this. So main always should be public.  
+Static: Using static we allocate some memory for main method. So it should be
+always static. In any program language the code should be saved into memory with some references. In java, objects does this task, basically they allocate memory for methods/variables.  Since main method has no object so Static allocates memory for main method.    
+Void: We don’t return anything from main, so its always void.  
+String args[] : It means, main method is expecting array of strings. That means, for ex: if you are creating a website, then you want to user to enter dynamic values every time, then you can give array of strings.   
+Create below class and then right click > run as > run configuration > arguments > enter 10 30 > then apply> then it will print 10 & 20 as output. 
+
+Class super  
+{ 
+  Public static void main (String args[])
+    {
+      System.out.println(args[0]);
+      System.out.println(args[1]);
+    }
+}
+
+Output:  
+10  
+20
+
+What if you don’t pass dynamic values: JVM will pass empty array or null.
+  System.out.println(args[0]);  
+Output:  
+Java.lang.string@1...9
 
 
 
