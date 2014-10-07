@@ -218,5 +218,45 @@ Override comparable method to use above override compareTo method. If value is 1
 - Keep all these in the same class where you have your TreeSet.  
 - While executing values to TreeSet, it checks if this value is duplicated & sort , if duplicated then remove it, if value is big then keep it in the front, if value is small then keep it in the back.  
  
-7: Only one null value is allowed if it is first value. Otherwise null is not allowed anywhere except at beginning. 8: Remember only one null value is allowed. Multiple null not allowed. Since it replaces existing null values.  Sorted Set: This is just an interface – there is nothing much to learn about it.  
+7: Only one null value is allowed if it is first value. Otherwise null is not allowed anywhere except at beginning.  8: Remember only one null value is allowed. Multiple null not allowed. Since it replaces existing null values.  Sorted Set: This is just an interface – there is nothing much to learn about it.  
 Tree Set: is the mostly used.  
+
+
+******************************************************************************
+**4: All Maps Classes**
+
+**Sub-Topics:**  
+1: Maps & diagram:  
+2: HashSet VS hash map:   
+3: LinkedHashSet vs Linked hash map:  LinkedHashSet  
+4: TreeSet and TreeMap:  
+5: Null values on Hash map, on Linked Hash map, on HashTable and on TreeMap:   
+6: Hash table:   
+7: Iterators/retrievable mechanism:
+
+1: All Map Classes & Hirarchy:   
+Interfaces: Maps & SortedHashMap  
+Classes: HashMap, Weak hashMap, Identity HashMap, TreeMap & Hashtable.
+
+
+1: If you have student class and student names. For ex: Class is Math, Sci and Comp.   
+And you have total 30 student names. 10 for each class. Now you can put all of them in single map and access the map as key value pair. 
+For ex:
+
+| Key  |Value |
+| ------------- |-------------|
+| Math  | Sajta, sarita, kavita|
+| Sci  |Ravi, ram, raju|
+|  Comp |John, albert, Robert, david |
+
+
+
+
+
+
+
+
+
+
+ 
+
