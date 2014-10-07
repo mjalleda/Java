@@ -249,9 +249,69 @@ For ex:
 | Sci  |Ravi, ram, raju|
 |  Comp |John, albert, Robert, david |
 
+2: But collection class can contain only values no keys.  The main difference between collections and maps are  
+- Collection are collection of individual objects, where maps are key-value pairs.    
+- In collections >>  sets don’t allow duplicate values. Where in maps    
+      1: Duplicate keys overrides existing keys.  
+      2: Duplicate values are not allowed.    
 
+3: Maps somehow looks similar to Collection Sets. Since both have similar classes. Like,  
+- hash set and hash map  
+- LinkedHashSet and LinkedHashMap  
+- Hashtable   
+- TreeSet and TreeMap. 
 
+**2: Hash Set vs hash map:**  HashSet prints the value in random order. Same as hashmap it prints the key-value pair in random order.
 
+**3: Linked Hash Set vs Linked Hash map:**  LinkedHashSet prints the value in the same order as they defined. Same as Linked hash map it prints the key-value pair in the same order as they defined.  
+LinkedHashSet is child of HashSet, same as LinkedHashMap it is child of HashMap.
+
+**4: TreeSet and TreeMap:**  Tree set sorts values and prints them in some sorting manner, Same as TreeMap it also prints the key-value pair in some sorting manner. Both, TreeSet and TreeMap, uses both comparable and comparator methods. Both don’t allow null values.  
+TreeSet is child or SortedTreeSet &   
+TreeMap is child of SortedTreeMap.
+
+**5: Null values on Hash map, Linked Hash map, HashTable and TreeMap:**  
+- HashMap and LinkedHashMap allows null values more than once.   
+- Where TreeMap allow null values only once.  
+- HashTable doesn’t allow null value at least once. 
+
+**6: Hash table:**  
+- This is a legacy class something like vectors.   
+- Which doesn’t do sorting but doesn’t allow null values more than once. But all methods inside this are synchronized methods.  
+- All methods inside this are synchronized that means they don’t allow multiple threads to access at same time. So these are suitable for ‘multiple thread accessible’ projects. .   
+- If any developer allow multiple users to access same form/object at same time, there might be data loss and data in-consistency. A user address might enter into different user’s account. To avoid these type of situation, developers don’t use hashMap & linkedHashMap, since they allow multiple users to access them. So developers uses HashTable. If we go in deep,   
+- They declare in such   a way that each objects/form declare declare as hashtable, that means hashtable is not declared as globally. Just to the local object/form. So each form can be accessed by one user and one user enters his data. That means, multiple users are not accessing the same form/object. 
+
+**7: Iterators/retrievable mechanism:** There are three iterators in Maps.    
+KeySet  
+EntrySet  
+Values.
+
+**1: KeySet:** This method return type should be sets. That means, you have to create a object type of set and then execute KeySet on Maps.   
+Purpose: This iterate on map and return key-value pairs.
+
+**2: EntrySet :** This method is also return type should be sets. That means, you have to create a object type of set and then execute EntrySet on keys.   
+Purpose: This iterate the keys and return the values. 
+
+**3: Values.** This method is also return type should be value. That means, you have to create a object type of Collection and then execute Values on Maps.   
+Purpose: This iterate on each map and return only values not keys. This will also return duplicate values since the return type is collection (it should be lists but don’t know why sun declared return type as collection. Since lists allows duplicates. But if you say collections, that means it includes sets too which is not correct).  
+
+Entry set and values look similar but they aren’t. Because, entry set works on each key and return its value. But Values works on each map and return values from maps.  
+Common: All three uses same iterator method inside to iterate each key-value.
+
+******************************************************************************  
+**5: All Others: Collection Class/API, Generics, String Tokenizer, Locale Class, Date API, Timer, Calendar, Comparator & Cursors.**
+
+**Sub-topics:**  
+1: Collection class VS collection interfaces:   
+2: Generics VS Raw classes (Lists, Sets and Maps):  
+3: String tokenizer:    
+4: LocaleClass :   
+5: SimpleDateformat:   
+6: Timer: 
+7: Calendar VS date:    
+8: Comparator.  
+9: Cursors.  
 
 
 
