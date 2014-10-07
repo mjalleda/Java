@@ -480,9 +480,9 @@ One more program:
         public Myclass(int m)  		// constructor  
         	{  
         	System.out.println(i+”,”+j+”,”+k+”,”+l+”,”+m);  
-        	}  
-               	{                 			 //Instance initialize block  
-               	J=70; l=20;   
+        	}
+        {                 			 //Instance initialize block  
+        J=70; l=20;   
                	}  
                	Static 					 //static Initialize block  
                	{  
