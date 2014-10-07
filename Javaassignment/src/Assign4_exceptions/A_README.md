@@ -149,15 +149,21 @@ ClassB() throws Exception { //code } OR //A level above.
 Yes, it is opposite with method overriding.
 
 
-6: Difference between Catch and Throws
-Catch
-Throws
-When exception occurs in try block, control jumps to catch block and handle the exception over here.
-If a method/class is defined with throws keyword, then control goes to the caller who called this parent/method.
-After handling the exception in catch block, control executes next lines of code
-Here, if none of parent classes are not handling the generated exception, then JVM will stop executing the code at line where the exception occurred.
-Basically, catch wants to handle the exception
-Here, parent/method says I don’t want to handle it, who ever calls me, let them handle it.
-Basically, next lines of code will execute since you are handling it in catch block
-The next lines of code will break if caller doesn’t handle it
-7: Throws VS Throw.
+**6: Difference between Catch and Throws**
+
+| Catch        |      Throws      |
+| ------------- |:-------------:|
+|When exception occurs in try block, control jumps to catch block and handle the exception over here.|If a method/class is defined with throws keyword, then control goes to the caller who called this parent/method.|
+|After handling the exception in catch block, control executes next lines of code|Here, if none of parent classes are not handling the generated exception, then JVM will stop executing the code at line where the exception occurred.|
+|Basically, catch wants to handle the exception|Here, parent/method says I don’t want to handle it, who ever calls me, let them handle it.|
+|Basically, next lines of code will execute since you are handling it in catch block|The next lines of code will break if caller doesn’t handle it|
+
+**7: Throws VS Throw.**
+
+| Throws        |      Throw      |
+| ------------- |:-------------:|
+|Throws is used while defining method signature or class signature. That means, who ever calls this method/class, they have to handle the exception, if JVM is the caller then JVM needs to handle it.|Throw is mostly used to throw custom exceptions. Basically if this happens throw my own exception.  It can also return predefined exception but what is the use, jvm also returns predefined exceptions.|
+||1: Either write throw in try blcok and handle it in catch block.OR 2: If you are not putting in try&catch block, then add throws to method signature. Since when throw occurs, it can be returned inside a method it can't go outside, either you have to catch it or tell somebody to throw it outside. Hence we use throws keyword to throw a custom exception out of the method.|
+|This works only with method/class.|This is only used inside a method|
+|For ex: Public parent throws Exception|throw e;|
+|Both are used only with exceptions Exception|Both are used only with exceptions
