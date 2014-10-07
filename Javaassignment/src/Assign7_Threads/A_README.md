@@ -67,10 +67,13 @@ If you implements Runnable interface, the advantage is you have also extends ano
 1: Threads Priority:   
 - We can define threads priority. Max is 10 and min is 1. Usually main thread gets priority 5.  
 - We can change threads priority, high priority threads gets high priority and low priority threads get low priority.  
+
 2: Threads setname and getname.   
 - We can set threads name and also return threads name.  
+
 **3: Thread Yield**   
 Thread can pause for a while but how long we don’t know. But if thread has high priority along with yield, it doesn’t get paused.  If you want to pause thread for a while you can use yield on some threads.    
+
 **4: Thread Join**  
 If you want to continue only one thread and want to block another threads execution, then you can use this method on  thread which you want to execute. So all other theads completely gets stopped and they will start executed when your thread finished execution.   
 
@@ -95,3 +98,18 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 **10: Generics:**  
 - Basically if you know you are inserting only employee objects/data into one list, you can define that List as more generic, so return type would also be employee object type. So that means, you are avoiding typecasting while returning objects in Object type. These are more widely used. Generic doesn’t allow any other values except its own(ex: employee) objects.   
 - But in raw type, you can have all types of values, but return type should need typecasted. 
+
+**11: Difference between Synchronized and Volatile** 
+| Synchronized methods/blocks|Volatile variable|
+| ------------- |-------------|
+| 1: This only used for methods and blocks. |1.: This only used for variables. |
+|2: This keyword used to allow only one thread to execute at one time. Basically protects statid and instance methods & blocks. |2: This keyword gives separate copy for each thread. Basically protects variable/|
+|3: This is used to avoid data incosistency problems |-------------|
+| ------------- |3: This is also used to avoid data inconsistency problems|
+
+**12: Difference between Threads & Processors**  
+| Threads| Processors|
+| ------------- |-------------|
+|1: All threads share same memory| Each process have thier own memory, they dont share memory most of the time|
+|They use low CPU usage|They use high CPU usage|
+
