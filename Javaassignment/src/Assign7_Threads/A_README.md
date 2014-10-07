@@ -115,3 +115,25 @@ Synchronized methods/blocks, you only allow one thread to execution at one time,
 | ------------- |-------------|
 |1: All thread share same memory. |1.:Each process have thier own memory, they dont share memory most of the time|
 |2: They use low CPU usage |2.They use high CPU usage |
+
+**13: Deamon threads: **  
+- Deamon threads run in the background. When you create deamon thread, after implementing it, you have to start it. 
+- Most used deamon threads are used for garbage collectors and for security.  
+
+**Garbage collectors:** For cleaning memory all the time, applications run  garbage collectors threads all the time.  For security purpose: If stopping attackers on web-based application, on background programmers run all threads to find if anybody is attacking.
+
+**14: Deamon deadlock:**  
+MutualTheadDeadlock: For ex: ThreadA has lock for ObjectA & threadB also have lock for ObjectA. Both holds lock but wait for another to release, but both don’t release. So deadlock happens. 
+
+**15: ThreadGroup:**  
+We can have multiple threads into one group.
+
+**16: Thread wait, notify & notifyall.**   
+Threads communicates to each other with wait, notify & notifyall.   
+1: Wait: One thread notifies other threads that it is waiting for lock.  
+2: notify: One thread notifies/tells one other thread that lock is released. 
+3: notifyall:  One thread notifies/tells all other threads that lock is released.  
+Example with threadA and threadB.: If threadA holds lock and thread waiting for the same lock. Then   
+- ThreadB tells threadA that it is waiting for the lock  
+- After execution, threadA notifies thread that lock is released.   
+- After execution, threadA can tell all other threads (which are waiting for the same lock) that lock is released.  A question arises here: Lets say you have 10 threads, one holds lock and all other are waiting for the lock, when lock gets released which one gets the lock out of remaining nine. Basically, when multiple threads wait for the same lock, thread scheduler (manager) puts in the queue in priority, so no two threads get same priority. So when lock released, the next priority thread gets the lock.
