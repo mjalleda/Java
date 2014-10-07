@@ -74,7 +74,8 @@ PolymorphismOverrideReturntypesSuperclassAnimal.java
 PolymorphismOverrideReturntypesSuperclassMonkey.java
 
 **1: Understanding some Overloading scenarios:**  
-**Scenario1:**Do method overloading and create error scenarios.  
+**Scenario1:**  
+Do method overloading and create error scenarios.  
 ProgramName: PolymorphismNameAmbiguity. 
 
 **Scenario2:** Do constructor overloading and call them.  
@@ -87,29 +88,30 @@ ProgramName: PolyOLWithAPIClasses.
 ProgramName: PolymorphismVarArguements. 
 
 **2: Understanding some Override scenarios:**  
-Override Scenario1: Override focus on Object type class. Some programs created for this: They are,  PolymorphismOverrideObjecttypesSuperclass.java  
-PolymorphismOverrideObjecttypesSubclass.java
+**Override Scenario1:**  
+Override focus on Object type class. Some programs created for this: They are,  
+- PolymorphismOverrideObjecttypesSuperclass.java  
+- PolymorphismOverrideObjecttypesSubclass.java
 
 **Override Scenario2:**  How to write datatypes in method overriding  
-Try all access specifiers (increase a level up OR same level).Declarations & object type calling  
-& Error conditions generating. Some programs created for this: They are,  
-PolymorphismOverrideDatatypeSuperclass.java  
-PolymorphismOverrideDatatypeSubclass is subclass.java
+Try all access specifiers (increase a level up OR same level).Declarations & object type calling & Error conditions generating. Some programs created for this: They are,  
+- PolymorphismOverrideDatatypeSuperclass.java  
+- PolymorphismOverrideDatatypeSubclass is subclass.java
 
 **Override Scenario 3:** how to write return types in method overriding  
 Try to use return types of API classes or examples of parent-child relationship. (same level or a level below). How to return object of these classes. Some programs created for this: They are,  
-PolymorphismOverrideReturntypesSuperclass is parent.java  
-PolymorphismOverrideReturntypesSubclass is subclass.java  
-PolymorphismOverrideReturntypesSuperclassAnimal.java  
-PolymorphismOverrideReturntypesSuperclassMonkey.java
+- PolymorphismOverrideReturntypesSuperclass is parent.java  
+- PolymorphismOverrideReturntypesSubclass is subclass.java  
+- PolymorphismOverrideReturntypesSuperclassAnimal.java  
+- PolymorphismOverrideReturntypesSuperclassMonkey.java
 
 **3: Polymorphism:**  In greek, poly means “any”, morphism means “forms/formats”. That is, any forms/formats. That means, you can create one methods in any number of forms/formats.  
 Two rules apply for polymorphism:   
-Method name should be the same.   
-Number of arguments/order of arguments/ arguments type should be different.   
-It doesn’t matter if return type is same or different. Or if there is no return type.  
-Overloading feature focuses on reference type & Override focuses on objective type.    
-Let’s take an example of ClassA and ClassB. i.e.,     
+- Method name should be the same.   
+- Number of arguments/order of arguments/ arguments type should be different.   
+- It doesn’t matter if return type is same or different. Or if there is no return type.  
+- Overloading feature focuses on reference type & Override focuses on objective type.    
+- Let’s take an example of ClassA and ClassB. i.e.,     
   ClassB obj1 = new ClassA();  
   Obj1 is reference type & Constructor is objective type.
 
@@ -146,36 +148,17 @@ Note: Second case will behave differently in override feature.
 2: Rule1:  If parent method has a access modifier (ex: default), subclass method can have same level of modifier (ex: default) or can go up to high levels (which are public and protected) but can’t use below levels of default which is private.
 
 
-A method in Super class
-Override method in subclass 
-Public
-If it is public
-It can be public only.
-Protected
-If it is protected
-It can be either public or protected. But can’t be default/private.
-Default
-If it is default
-It can be either public or protected or default, can’t be private.
-Private
-If it is private
-Obviously can’t be visible outside of the class
-Final
-If it is final
-It can be visible but can’t be accessible since it is final
-Static
-If it is static 
-It should be static only.
-Abstract 
-If method is abstract.
-It can be non abstract.
-Non final
-If method is not a final method.
-It can be final in subclass. 
-Synchronized
-if a method is synchronized
-It can be either synchronized or non-synchronized.
-
+| Access Modifiers        |      A method in Super class      |  Override method in subclass  |
+| ------------- |-------------| -----|
+|Public|If it is public| It can be public only.|
+|Protected|If it is protected|it can be either public or protected. but can't be default/private|
+|Default|If it is default| it can be either public or protected or default, can't be private|
+|private|If it is private| Can't be visible outside of the class|
+|Final|If it is final| It can be visible but can’t be accessible since it is final.|
+|static|If it is static| It should be static only|
+|Abstract|If method is abstract| It can be non abstract|
+|not fianl|If a method is not final method|It can be final in subclass. |
+|synchronized|If a method is synchronized|It can be either synchronized or non-synchronized.|
 
 **7: Override method return types:**  
 1: We use return types in method overriding, basically we need to learn “what return types a parent method is using, if subclass method can use same return type or levels below/above?“  
