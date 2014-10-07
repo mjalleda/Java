@@ -1,6 +1,6 @@
 Core Java Fundamentals
 ======================
-I only covered topics on core java. Below are Sub-topics of Fundamentals: 
+I only covered core java. Below are Sub-topics of Fundamentals: 
 
 **Fundamentals:**  
 ___________________  
