@@ -1,6 +1,7 @@
 EXCEPTIONS:
 ==============  
 
+
 **Index**  
 **1: Exceptions:**  
 1. What is exception:  
