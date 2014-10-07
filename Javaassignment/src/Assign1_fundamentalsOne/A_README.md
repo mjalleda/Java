@@ -342,3 +342,96 @@ Anonymous classes > Inner classes > Static Inner classes > and then Method Inner
 2: None of these are accessed from outside.  
 3: By default all Inner classes are private, even if you define them as public there will be no use, since they are not allowed from outside.  
 **Disadvantage:** You can’t access any Inner class from outside of the class.
+
+
+******************************************************************************
+**18: Interfaces**      
+Any programs created: No  
+Programs:
+InterfaceA,   
+InterfaceB,   
+SubInterface,   
+ClassImplementsInterfaceAInterfaceB are related.
+
+**1: Interfaces:** The main purpose of interfaces to define specifications. That means  
+	1: It can only have abstract methods no instance(regular/concrete) methods are allowed  
+	2: So only signature is allowed due to abstract classes. So interface class can’t have actual 			 	implementation.  
+	3: In interface when you write method, no need to mention abstract infront of methods, by default they are 		abstract methods  
+	4: Regular classes can’t extend interface classes, but they can implement the interface class by using 			keyword ‘implement’. 
+	For ex:  
+	public regular class implement interfaceclass
+	{
+	}  
+	5: Other interface class can extend more than one interface class.   
+	For ex: public interfaceclassone extend interfaceclasstwo interfaceclassthree  
+	{  
+	}  
+	A class can extend only one class at a time .But a interface can extend any number interfaces.  
+	A class can implement any number of interfaces at a time.But interface never implement another interface.  
+	6:Later in classes, If you want to provide implementation for any interface method ,it must be declared as 		public .  
+	7: The first concrete class which implements an interface must provide implementation for all the interface 	methods otherwise the class must declared as abstract. 
+
+**2: Interface variables:** are by default public static final. Public is you can access anywhere, static means you can access in both static & in concrete methods. Final means you can re-initialize the value.
+
+**3: Interface methods:** are by default Public Abstract. Public means you can access this from anywhere, abstract means only signature is allowed not implementation. 
+
+
+******************************************************************************				     
+**19:Assertions**  
+Any programs created: No  
+**Assertions:** Assertions are not used in any logic, those are not useful at all. Instead of using system.out.println, we can use assertions. For ex: if you want to delete system.out.println, then how to delete them if they are in different places. So this is possible with assertions. So print with assertions every where, and configure some where to delete them by one configuration.    
+There is no difference using assertions and system out println.
+
+
+******************************************************************************
+**20: Java execution Flow, Instance and Static Blocks & Methods.**  
+Any programs created: Yes  
+Programs Names:   
+Exer20_JavaFlowBothStaticAndInstanceExecution  
+Exer20_JavaFlowBothStaticAndInstanceExecutionSubclass  
+Exer20_JavaFlowBothStaticAndInstanceExecutionSuperclass  
+Exer20_JavaFlowInstanceExecution  
+Exer20_JavaFlowStaticExecution
+
+1: Java execution flow:  
+2: What are static blocks and instance blocks.   
+3: Java execution flow order should be: 
+
+1: In java if you have static blocks, instance blocks, constructors and main method. Java first runs  
+	Static blocks, later instance block, later constructor finally main method.   
+	Static blocks > Instance blocks > Constructor > finally main class.
+
+2: What are static blocks and instance blocks.  
+These are just blocks not methods, basically they can also have arguments/variables.   
+But these should be defined outside of main class. Not only top level of class, you can define them anywhere but outside of main class. 
+
+        Public sample()
+Int I;
+Int j;
+
+Sample(int I, int j) // this is constructor
+{
+Print “ This is constructor”
+}
+
+{
+Static m1() // this is static block
+{
+Print (“ The project starts here”);
+}
+
+Int M2() // this is instance blcok
+{
+Print ”This is the project name”; 
+K=i+j;
+Int k;
+}
+
+Public static void main(String args[])
+{
+Sample s = new Sample(10,20);
+s.m2();
+}
+
+
+
