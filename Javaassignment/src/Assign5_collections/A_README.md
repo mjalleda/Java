@@ -99,9 +99,8 @@ But for ex: if all above classes implemented some methods, let say if 6 methods 
 6. Most commonly used are Lists are     
 - ArrayList  
 - Vectors  
-- LinkedList  
-- Finally stack.    
-
+- LinkedList    
+- Stack.
 7. Size (arrayList, linked list, vector list and stack) grows dynamically for collections unlike concrete classes.  
 8: Even, List & sets share common methods like Iterator.  
 9: All lists & sets holds objects, by default its size is 10 but JVM dynamically grows its size.  
@@ -112,3 +111,15 @@ But for ex: if all above classes implemented some methods, let say if 6 methods 
 . import java.util.Enumeration;  
 . import java.util.Vector;  
 . import java.util.ListIterator;
+
+
+**2. Difference between List & Set.**
+| Lists        |      Sets      |
+| ------------- |-------------|
+|Both are used to transfer set of values (using objects) in between layers like control, service or DEO.| |
+|Both are used to search values on an Object (of set of values).| |
+|But Lists allows duplicate values to print/add. |Set Doesn’t allow duplicate values. It removes duplicate while retrieving. |
+|List allow multiple null values to be in the list.| But Set doesn’t allow more than one null value. It only return one null values if it has multiple.|
+|List returns the order of values in the order they are initialized.|In set order is preserved( except LinkedHashSet). |
+|Widely used are Lists.|If you don’t want duplicates then use sets. |
+|List uses both For and Foreach. Because it is index based.|Since set is not index based it doesn’t allow forloop. Only allows foreach loop.|
