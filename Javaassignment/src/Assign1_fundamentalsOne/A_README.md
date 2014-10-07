@@ -146,16 +146,14 @@ Create below class and then right click > run as > run configuration > arguments
 
        * item text::
 
-                code block
-                
-                
-Class super  
-{Public static void main (String args[])
-    {
-      System.out.println(args[0]);
-      System.out.println(args[1]);
-    }
-}
+                Class super  
+                {
+                Public static void main (String args[])
+                {
+      			System.out.println(args[0]);
+      			System.out.println(args[1]);
+    		}
+		}
 
 Output:  
 10  
