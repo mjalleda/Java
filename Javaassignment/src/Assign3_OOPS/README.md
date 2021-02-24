@@ -192,6 +192,7 @@ Program Names: HowtoUseConstructors
 **1: Constructor:** There are two types of constructors. Default constructor and parameterized constructor. 
 
 **2: Main purpose:**   
+While creating an object we use constructor. It takes same classname wtih parenthesis. However, we use constructor for initilizing objects. When is object is created the lines inside constructor will be executed first. 
 Basically to initialize instance variables before object is created. Let’s take a real time example. You want to pass username and password to make a connection to database before actual object is created, you can pass them in constructor. So before object is created, compiler will execute the constructor to make db connection with uname and password.
 
 **3: Default constructor:** Basically if you don’t create any constructor or a default constructor, compiler will create a default constructor when you create an object. 
