@@ -197,10 +197,10 @@ Java.lang.string@1...9
 Below are called Access Modifiers:  
 Public, Private, Protected, Default, static, final, abstract, strictfp, native  
 Notes:   
-- The allowed modifiers for the Top level classes are : 1.public 2.default 3. final 4.abstract 5. Strictfp, 6: Abstract    
-- The allowed modifiers for the method level are 1.public 2.default 3. Private 4.protected 5. Final, 6: static 7: Abstract  
-- The allowed modifiers for the variables  
-- Final, public, protected, default, private and static.
+- The allowed modifiers for the Top level classes are : 1.public 2.default 3. final 4.abstract
+- The allowed modifiers for inner level classes are: public, protected, private, default, final, static.     
+- The allowed modifiers for the method level are 1.public 2.default 3. Private 4.protected 5. Final, 6: static 7: Abstract, 8: native  
+- The allowed modifiers for the variables : public, protected, default, private, final and static.
 For ex: Package 1 have class1 and class2. Package 2 contains : Class3 & Class4.
 
 **1: Public:** Accessed everywhere (refer to diagram in the notes).   If public defined in class1, it can be accessed in class2, packag1, and all classed in packag2. 
@@ -239,14 +239,39 @@ If a class declared as the final ,you are not allowed to create the child class.
 We can not apply static keyword for the top level classes,but we can apply inner classes.  
 For every object a separate copy of instance variables will be created but in the case of static variables a single copy will be created at the class level and shared by all the objects of that class.
 
-**8: Native:** Native means, you can use c/c++ code with in java class by making some configuration changes. But how to write c/c++ code in java.  For ex: There is a requirement that we need add Client API/Classes/code into our code, so our application can analyze client's data. But client code is in c/C++ and ours is in Java. How is it possible?
-Basically, java allow a method called ‘addLibrary’. If you keep the client code in local machine, then you can add that api into our java program by ‘addLibrary’ method.  
-If you know a method exists in C/C++ api, then you can define that method with native. 
+**8: Native:**: In Java, the native keyword is used to declare a method that is implemented in a language other than Java. It is often used in conjunction with Java Native Interface (JNI) to enable Java code to call functions and use libraries written in languages like C or C++. The use of native methods is a way to incorporate platform-specific or performance-critical code written in other languages into a Java application.
 
-**9: Strictfp:** Basically you are strictly maintaining a structure for floating point variables.   
-Why it is introduced? : Before java 1.4, floating point variables to take 32 bits if OS is 32 bit OS, otherwise it takes 64bits if OS is 64bit OS. Code may not run if you run the 32 bit code on 64 bit and vise versa.
-To avoid this problem, java introduced Strictfp. Basically we define Strcitfp for classes not for methods or variables. Inside that class, all floating point variables take same number of decimal points that you have. Basically it goes by IEEE standards.
+Java language code:
+public class NativeExample {
+    // Declaration of a native method
+    public native void nativeMethod();
+}
 
+C langulage code:
+#include <jni.h>
+#include <stdio.h>
+
+JNIEXPORT void JNICALL Java_NativeExample_nativeMethod(JNIEnv *env, jobject obj) {
+    // Native method implementation
+    printf("This is a native method.\n");
+}
+
+Java code: 
+public class Main {
+    static {
+        // Load the native library
+        System.loadLibrary("NativeLibrary");
+    }
+    public static void main(String[] args) {
+        NativeExample nativeExample = new NativeExample();
+        nativeExample.nativeMethod();
+    }
+}
+In the above example:
+• NativeExample is a Java class with a native method named nativeMethod.
+• The native implementation of nativeMethod is provided in C. The method signature adheres to JNI conventions.
+• The Java program loads the native library using System.loadLibrary("NativeLibrary"), where "NativeLibrary" is the name of the compiled native library (e.g., a shared library like a .dll or .so file).
+• The main method creates an instance of NativeExample and calls its nativeMethod.
 
 ******************************************************************************
 **14: Variable argument method**  
