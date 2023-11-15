@@ -258,14 +258,14 @@ JNIEXPORT void JNICALL Java_NativeExample_nativeMethod(JNIEnv *env, jobject obj)
 
 Java code: 
 public class Main {
-    static {
-        // Load the native library
-        System.loadLibrary("NativeLibrary");
-    }
-    public static void main(String[] args) {
-        NativeExample nativeExample = new NativeExample();
-        nativeExample.nativeMethod();
-    }
+	static {
+	// Load the native library
+ 	System.loadLibrary("NativeLibrary");
+  	}
+  	public static void main(String[] args) {
+   	NativeExample nativeExample = new NativeExample();
+    	nativeExample.nativeMethod();
+     }
 }
 In the above example:
 • NativeExample is a Java class with a native method named nativeMethod.
